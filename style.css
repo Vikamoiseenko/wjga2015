@@ -20,12 +20,179 @@ body{
 	font-size: 100%;
 	font-family: Helvetica, Arial, sans-serif;
 }
+#header{
+	max-width: 980px;
+	margin-top:5px;
+	margin-bottom: 15px;
+	margin: 0 auto;
+}
+#utilities{
+	margin-bottom: 10px;
+	clear:both;
+	}
+#social{
+	overflow:hidden;
+	float: left;
+	magin-top: 5px;
+	position: relative;
+	
+}
+#search{
+	float:right;
+	overflow: hidden;	
+}
+#logo{
+	float:left;	
+	max-width: 100%;
+}
 
 #middle {
 	max-width:940px;
 	margin:0 auto;
 	margin-top:15px;
+	clear:both;
 }
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+#widgets article#post-excerpt {
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+#widgets article#post-excerpt p {
+	display: inline;
+	float:right;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; 
+	/* Above WP toolbar. */
+}
+
+#widgets blogimg.attachment-thumbnail{
+   float: left;
+    margin: 0 20px 0 0;
+}
+.blogimg {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+#content article.post-excerpt {
+overflow: hidden;
+margin-bottom: 20px;
+}
+img.wp-post-image {}
+img.attachment-thumbnail {}
+img.attachment-medium {}
+img.attachment-large {}
+img.attachment-full {}
+
+
+
+
 /*
 #nav{
 max-width: 980px;
@@ -129,6 +296,7 @@ background: -moz-linear-gradient( top, #600, #300); /* CSS 3 */
 font: 1.0em "Segoe UI", "Lucida Grande", Verdana, Arial, sans-serif;
 border-top:1px solid #999;
 border-bottom:2px solid #000;
+margin-top:15px;
 }
  
 /* Top level Unordered list */

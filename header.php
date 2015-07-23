@@ -9,6 +9,8 @@
 
 <!-- begin style -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 <link href="<?php bloginfo('template_directory'); ?>/flexslider.css" rel="stylesheet" type="text/css" />
 <!-- end style -->
 
@@ -30,18 +32,34 @@
 </head>
 <body <?php body_class(); ?>>
 
+<!-- Begin HEADER -->
 <div id="header">
-<h1>First Test Theme</h1>
+<!-- Begin Utility Menu -->
+<div id="utilities">
+<!-- Begin Social  Icon-->
+<div id="social">
+<i class="fa fa-facebook-square fa-2x"></i>
+<i class="fa fa-instagram fa-2x"></i>
+<i class="fa fa-youtube fa-2x"></i>
+<i class="fa fa-twitter-square fa-2x"></i>
+</div> <!-- end social icon -->
+
+<!-- begin search form -->
+<div id="search">
+<form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
+<i class="fa fa-search fa-2x"></i>
+<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="submit" />
+</form> <!-- end search form -->
 </div>
 
-<!-- Begin Navigation -->
-<!--<div id="nav"> -->
-<!--
-<ul id="nav-items">
-<li><a href="home.php">Home Page</a></li>
-<li><a href="contact.php">Contact</a></li>
-</ul>
--->
+</div> <!-- end utiliti menu -->
+
+<!-- begin logo -->
+<div id="logo">
+<a href="" title="">
+<img src="images.jpg" />
+</a>
 <!-- Begin new Navigation -->
 <?php  wp_nav_menu( array(
     'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
@@ -54,3 +72,9 @@
 <!--</div>
 <!-- end Navigation -->
 
+</div>
+<!-- end logo -->
+
+
+
+</div> <!--end header -->
