@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>First Test Theme for WEB 210 class</title>
+<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
 <!-- begin meta -->
 <meta name="viewport" content="user-scalablo=no, initial-scale=1.0, maximum-scale=1.0" />
 <!-- end meta -->
@@ -43,14 +43,13 @@
 </ul>
 -->
 <!-- Begin new Navigation -->
-<?php wp_nav_menu(
-array(
-'theme_location' => 'main-menu',
-'container' => 'div',
-'container_id' => 'nav',
-'items_wrap' => '<ul id="nav-items" class="%2$s">%3$s</ul>',
-)
-); 
+<?php  wp_nav_menu( array(
+    'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
+    'menu_class' => 'dropdown', //Adding the class for dropdowns
+    'container_id' => 'navwrap', //Add CSS ID to the containter that wraps the menu.
+    'fallback_cb' => 'wp_page_menu', //if wp_nav_menu is unavailable, WordPress displays wp_page_menu function, which displays the pages of your blog.
+    )
+      );
 ?>
 <!--</div>
 <!-- end Navigation -->
