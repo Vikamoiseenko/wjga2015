@@ -33,17 +33,15 @@
 <body <?php body_class(); ?>>
 
 <!-- Begin HEADER -->
-<div id="header">
 <!-- Begin Utility Menu -->
 <div id="utilities">
 <!-- Begin Social  Icon-->
 <div id="social">
 <i class="fa fa-facebook-square fa-2x"></i>
-<i class="fa fa-instagram fa-2x"></i>
-<i class="fa fa-youtube fa-2x"></i>
 <i class="fa fa-twitter-square fa-2x"></i>
+<i class="fa fa-youtube fa-2x"></i>
+<i class="fa fa-instagram fa-2x"></i>
 </div> <!-- end social icon -->
-
 <!-- begin search form -->
 <div id="search">
 <form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
@@ -52,14 +50,16 @@
 <input type="submit" id="searchsubmit" value="submit" />
 </form> <!-- end search form -->
 </div>
-
 </div> <!-- end utiliti menu -->
 
+<div id="header">
 <!-- begin logo -->
 <div id="logo">
 <a href="" title="">
-<img src="images.jpg" />
+<img src="<?php bloginfo('template_directory'); ?>/images.jpg" />
 </a>
+</div><!-- end logo -->
+
 <!-- Begin new Navigation -->
 <?php  wp_nav_menu( array(
     'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
@@ -71,10 +71,6 @@
 ?>
 <!--</div>
 <!-- end Navigation -->
-
-</div>
-<!-- end logo -->
-
 
 
 </div> <!--end header -->

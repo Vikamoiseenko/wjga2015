@@ -66,19 +66,44 @@ function add_flexslider() {
         echo '<div class="flexslider">';
         echo '<ul class="slides">';
     
-        foreach ($attachments as $attachment_id => $attachment) {            
-	     echo '<li>';
-            echo wp_get_attachment_image($attachment_id, 'large');
-            echo '<span class="flex-caption">';
-            echo get_post_field('post_excerpt', $attachment->ID);
-            echo '</span>';
-            echo '</li>';
-        }
-        echo '</ul>';
-        echo '</div>';
-    }
-}
-add_shortcode( 'flexslider', 'add_flexslider' );
+ // create the list items for images with captions
+    
+    foreach ( $attachments as $attachment_id => $attachment ) { 
+	
+		$theImage = wp_get_attachment_image($attachment_id, 'full');
+		$theBlockquote = get_post_field('post_excerpt', $attachment->ID);
+		$theLink = get_post_field('post_content', $attachment->ID);
+	
+        echo '<li>';
+		
+		if (is_page('Home')) { // use full size image with blockquote for home page
+			
+        	echo $theImage;
+			//echo '<blockquote class="home">'.$theBlockquote.'&nbsp;</blockquote>';
+			echo '<a href="'.$theLink.'"><button class="home">Find out more&nbsp;&raquo;</button></a>';
+			
+		}
+		
+		else { // use large size image with caption for all other pages and postings
+			
+			echo wp_get_attachment_image($attachment_id, 'large');
+			echo '<p>';
+			echo get_post_field('post_excerpt', $attachment->ID);
+			echo '</p>';
+			
+		}
+      
+        echo '</li>';
+        
+    } ?>
+    
+    </ul>
+    </div>
+    <!-- End Slider -->
+        
+	<?php }// end see if images
+	
+} // end add flexslideradd_shortcode( 'flexslider', 'add_flexslider' ); 
 
 //Enable Feauture images and post thumbnails
 add_theme_support('post-thumbnails');
