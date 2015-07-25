@@ -30,7 +30,11 @@ a {
 /* GLOBAL TEXT STYLES */
 
 html {
+<<<<<<< HEAD
 	font-size: 16px;
+=======
+	/*font-size: 16px; */
+>>>>>>> Victoria
 }
 
 body{
@@ -138,6 +142,7 @@ h1 strong {
 	overflow:hidden;
 	width:100%;
 }
+<<<<<<< HEAD
 
 
 #middle {
@@ -147,6 +152,106 @@ h1 strong {
 	padding-right:20px; /*older browsers*/
 	padding-right:1.25rem; /*20px /16px */
 	
+=======
+a:link, 
+a:visited {
+	color: #888;
+	}
+		
+a:hover, 
+a:focus {
+	color: #004A71;
+	border-bottom: 1px solid #ddd;
+	}
+	
+/* END GLOBAL TEXT STYLES */
+
+/* HEADINGS */
+html {
+   font-size: 1em;		
+}
+
+img, embed, object, video, iframe, .wp-caption { 	
+	max-width: 100%;		/* images never exceed parent container's size */
+	width: auto;			/* override img width for IE8 and below */
+	height: auto;			/* override img height attribute to maintain aspect ratio */
+}
+
+
+iframe {
+	max-width: 100%;		/* images never exceed parent container's size */
+	width: auto;			/* override img width for IE8 and below */
+	height: auto;		
+}
+/* HEADINGS */
+
+p {
+	margin-bottom: 1.3em;
+	text-align: center;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom:.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+h1 {
+  margin-top: 0;
+  font-size: 2.441em;
+}
+
+h1 span { 		
+   display:none;
+}   
+
+h2 {
+	font-size: 1.953em;
+}
+
+h3 {
+	font-size: 1.563em;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+small, .font_small {
+	font-size: 0.8em;
+}
+h1 strong {
+	font-weight:normal;
+	letter-spacing:0.1875em;/*3px / 16px*/
+}
+
+#secondary h3, #primary h3  {
+ 	border-bottom:2px solid #CACACA;
+    font-family:Arial, sans-serif;
+    font-size:1em;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding-bottom:.25em;
+}
+
+#secondary h2, #primary h2  {
+	border-bottom:2px solid #CACACA;
+    font-family:Arial, sans-serif;
+    font-size:1.215em;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding-bottom:.25em;
+}
+/* END HEADINGS */
+
+/* LAYOUT */
+
+#wrapper {
+	max-width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	width:100%;
+>>>>>>> Victoria
 }
 
 #main {
@@ -185,8 +290,11 @@ h1 strong {
 /* END LAYOUT */	
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> Victoria
 #header{
 	max-width: 980px;
 	margin-top:5px;
@@ -212,9 +320,50 @@ h1 strong {
 	float:left;	
 	max-width: 100%;
 }
+<<<<<<< HEAD
 
 
 
+=======
+#middle {
+	max-width:940px;
+	margin:0 auto;
+	margin-top:15px;
+	clear:both;
+}
+#middle {
+	overflow:hidden;
+	padding-left:20px; /*older browsers*/
+	padding-left:1.25rem; /*20px /16px */
+	padding-right:20px; /*older browsers*/
+	padding-right:1.25rem; /*20px /16px */
+	
+}
+html body.home.page.page-id-9.page-template-default div#widgets section.widgets-item button#button {
+	padding: 5px 25px 3px;
+	width: 140px;
+	display: block;
+	margin:auto;
+	margin-bottom: 10px;
+}
+html body.home.page.page-id-9.page-template-default div#widgets section.widgets-item button#button a{
+	display:block;
+	font-size:18px;
+	padding-top: 2px;
+}
+#widgets{
+	max-width:940px;
+	margin:0px auto;
+}
+#widgets section.widgets-item{
+	width: 300px;
+	float:left;
+	margin-right: 10px;
+	border:1px solid;
+	margin-bottom:10px;
+	
+}
+>>>>>>> Victoria
 
 /* FORM STYLES */
 
@@ -360,100 +509,6 @@ img.attachment-full {}
 
 
 
-
-/*
-#nav{
-max-width: 980px;
-margin: 0 auto;
-padding: 10px 0;	
-}
-#nav ul{
-	overflow: hidden;
-	padding: 10px 0;
-	margin: 0;	
-}
-
-#nav ul li{
-	list-style: none;
-	float: left;
-	margin: 0;
-	margin-right: 10px;
-}
-
-#nav ul li a{
-	color: #092D82;
-	text-decoration: none;
-}
-#navul li a:hover {
-			color: #1159E9;
-		}
-		
-		#navigation ul li.current a {
-			color: #1159E9;
-		}
-
-
-nav.main {
-	font-size:100%;
-		width:100%;
-		margin:0px 0px 20px 0;
-	background:  rgba(52, 9, 2, 1);
-	margin-top: 60px;
-	}
-nav.main ul li a {
-	text-decoration:none;
-	color: #fff;
-	padding:20px 22px;
-	line-height:100%;
-}
-nav.main ul {
-/*height:100%;
-position:relative;
-text-align:left;
-margin:0;
-padding:0;
-}
-nav.main ul li{
-	display:inline-block;
-	list-style:none;
-	margin: 5px 15px 0;
-	padding:0;
-	}
-nav.main ul li a{
-	display:block;
-}
-nav.main ul li.current{
-	color:#0FEF18;
-	background:#340902;
-	border-radius: 5px;
-}
-nav.main ul li:hover{
-	color:#E7E6E6;
-}
-nav.main ul li:hover a{
-	color:#E7E6E6;
-}
-nav.main ul li:hover ul{
-	display:block;
-}
-nav.main ul ul{
-	display: none;
-	position:absolute;
-	z-index:2000;
-}
-nav.main ul ul li{
-	display:block;
-	width:100%;
-	padding:5px 0;
-	font-size:.85em;
-	background-color:#340902;
-}
-nav.main ul ul li:hover a{
-	color:#fff;
-}
-*/
-
-
 /* The container wrapping ul.dropdown */
 #navwrap {
 /*float:left;*/
@@ -551,7 +606,51 @@ border-top:1px solid #222;
 
 
 footer{
+	padding-bottom: 20px;
 	clear: both;
 }
+div#footer{
+	max-width:980px;
+	margin: 0 auto;
+}
+html body.home.page.page-id-9.page-template-default footer div#footer nav.footer-menu div.menu{
+		font-family: "Gotham Black", Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		color: #FFF;
+		width: 113px;
+		float: left;
+		list-style-type: none;	
+		margin-right: 20px;	
+		}
+		
+	#menu-footer-menu > li:last-child {
+		margin-right: 0;
+	}
+	
+	#menu-footer-menu > li a {
+		color: #FFF;
+	}
+		
+	#menu-footer-menu ul.sub-menu li {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		list-style-type: none;
+		
+	}
+	
+	#menu-footer-menu ul.sub-menu li a {
+		color: #FFF;
+		text-decoration: none;
+	}
+	
+	#menu-footer-menu ul.sub-menu li a:hover {
+		border-bottom: 1px solid #FFF;
+		color: #FFF;
+	}
+	
+	#menu-footer-menu ul.sub-menu li.current_page_item a {
+		color: #FFF;
+		border-bottom: 1px solid #FFF;
+	}
 
 

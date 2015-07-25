@@ -16,6 +16,7 @@ Version: 1.0
 //Register my menu
 register_nav_menus(array(
 'main-menu' => __( 'Main' ),
+'footer-menu' => __('Footer')
 ));
 
 
@@ -103,7 +104,7 @@ function add_flexslider() {
 		if (is_page('Home')) { // use full size image with blockquote for home page
 			
         	echo $theImage;
-			//echo '<blockquote class="home">'.$theBlockquote.'&nbsp;</blockquote>';
+			echo '<blockquote class="home">Lorem ipsum dolor sit amet, error mundi te duo. Ad justo elitr suscipit usu, brute mnesarchum ex eum, te his summo affert consequuntur. &nbsp;</blockquote>';
 			echo '<a href="'.$theLink.'"><button class="home">Find out more&nbsp;&raquo;</button></a>';
 			
 		}

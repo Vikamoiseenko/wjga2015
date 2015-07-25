@@ -86,16 +86,30 @@ height: auto;
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
-	
-div.flexslider button.home {
+div.flexslider blockquote.home {
 	position: absolute;
+	/*top: 20px; */
 	bottom: 20px;
 	right: 20px;
 	text-align: left;
+	color: #FFF;
+	text-shadow: 2px 2px #000;
+	max-width: 500px;
+	z-index: 3;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	line-height: 150%;
+	padding: 4px 10px;
+	}	
+div.flexslider button.home {
+	position: absolute;
+	bottom: 20px;
+	right: 60px;
+	text-align: left;
 	max-width: 450px;
 	z-index: 3;
-	font-family: SignPainter, sans-serif;
-	font-size: 1.5em;
+	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
 	line-height: 150%;
 	padding: 4px 10px;
 	background-color: #aad9f5;
@@ -119,10 +133,74 @@ div.flexslider button.home {
 	padding-left: 0;
 	padding-right: 0;
 	}
+#content div.flexslider p {
+	font-family: "Gotham Black", sans-serif;
+	font-size: 14px;
+	font-style: italic;	
+	padding-top: 8px;
+}
+
+/* Mobile Screen Set to 640px or Below  */
+@media screen and (max-width: 750px) {
 	
-
-
-@media screen and (max-width: 860px) {
-.flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
-.flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+	.flexslider {
+    	text-align: left;
+		margin-bottom: 0;
+		}
+		
+	body.home .flexslider {
+    	text-align: left;
+		margin-bottom: 10px;
+		}
+	
+	.flexslider img {
+		margin-bottom: 0px;
+		}
+		
+	body.home .flexslider img {
+		margin-bottom: 10px;
+		}
+		
+	.flex-control-paging, .flex-direction-nav {
+		display: none;
+	}
+	
+	div.flexslider blockquote.home {
+		position: relative;
+		display: inline;
+		color: #000;
+		text-shadow: none;
+		max-width:100%;
+		font-size: 1em;
+		line-height: 150%;
+		text-align: left;
+		top: 0;
+		left: 0;
+		/*border: 1px solid magenta;*/
+		}
+		
+	div.flexslider a button.home {
+		color: #000; /* DARK RED */
+	}
+	
+	div.flexslider a:hover button.home {
+		color: #A7181D; /* DARK RED */
+		text-shadow: none;
+	}
+		
+	div.flexslider button.home {
+		position: relative;
+		display: inline;
+		text-align: left;
+		max-width: 100%;
+		font-size: 1em;
+		line-height: 150%;
+		text-align: left;
+		padding: 0;
+		background: none;
+		top: 0;
+		left: 0;
+	}
+	
+	
 }
