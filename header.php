@@ -74,3 +74,6 @@
 
 
 </div> <!--end header -->
+<!-- END MAIN NAVIGATION -->
+			
+ <div id="middle">
