@@ -30,18 +30,13 @@ a {
 /* GLOBAL TEXT STYLES */
 
 html {
-<<<<<<< HEAD
-	font-size: 16px;
-=======
 	/*font-size: 16px; */
->>>>>>> Victoria
 }
 
 body{
 	font-size: 100%;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family:  Myriad Pro, Arial, Helvetica, sans-serif;
 }
-
 a:link, 
 a:visited {
 	color: #888;
@@ -76,13 +71,14 @@ iframe {
 
 p {
 	margin-bottom: 1.3em;
+	text-align: left;
 }
 
 h1, h2, h3, h4 {
   margin-bottom:.5em;
   font-weight: inherit;
   line-height: 1.2;
-}
+  }
 
 h1 {
   margin-top: 0;
@@ -99,6 +95,7 @@ h2 {
 
 h3 {
 	font-size: 1.563em;
+	text-align: left;
 }
 
 h4 {
@@ -108,19 +105,17 @@ h4 {
 small, .font_small {
 	font-size: 0.8em;
 }
-
 h1 strong {
 	font-weight:normal;
 	letter-spacing:0.1875em;/*3px / 16px*/
 }
 
 #secondary h3, #primary h3  {
- 	border-bottom:2px solid #CACACA;
-    font-family:Arial, sans-serif;
+ 	font-family:Arial, sans-serif;
     font-size:1em;
     font-weight: bold;
-    text-transform: uppercase;
-	padding-bottom:.25em;
+    padding-bottom:.25em;
+	text-align:left;
 }
 
 #secondary h2, #primary h2  {
@@ -132,116 +127,14 @@ h1 strong {
 	padding-bottom:.25em;
 }
 
-/* END HEADINGS */
-
-/* LAYOUT */
-
-#wrapper {
-	max-width:1200px;
-	margin:0 auto;
-	overflow:hidden;
-	width:100%;
-}
-<<<<<<< HEAD
-
-
-#middle {
-	overflow:hidden;
-	padding-left:20px; /*older browsers*/
-	padding-left:1.25rem; /*20px /16px */
-	padding-right:20px; /*older browsers*/
-	padding-right:1.25rem; /*20px /16px */
-	
-=======
-a:link, 
-a:visited {
-	color: #888;
-	}
-		
-a:hover, 
-a:focus {
-	color: #004A71;
-	border-bottom: 1px solid #ddd;
-	}
-	
-/* END GLOBAL TEXT STYLES */
-
-/* HEADINGS */
-html {
-   font-size: 1em;		
-}
-
-img, embed, object, video, iframe, .wp-caption { 	
-	max-width: 100%;		/* images never exceed parent container's size */
-	width: auto;			/* override img width for IE8 and below */
-	height: auto;			/* override img height attribute to maintain aspect ratio */
-}
-
-
-iframe {
-	max-width: 100%;		/* images never exceed parent container's size */
-	width: auto;			/* override img width for IE8 and below */
-	height: auto;		
-}
-/* HEADINGS */
-
-p {
+#secondary p, #primary p {
 	margin-bottom: 1.3em;
-	text-align: center;
+	text-align: left;
 }
 
-h1, h2, h3, h4 {
-  margin-bottom:.5em;
-  font-weight: inherit;
-  line-height: 1.2;
-}
-h1 {
-  margin-top: 0;
-  font-size: 2.441em;
-}
 
-h1 span { 		
-   display:none;
-}   
 
-h2 {
-	font-size: 1.953em;
-}
 
-h3 {
-	font-size: 1.563em;
-	text-align: center;
-}
-
-h4 {
-	font-size: 1.25em;
-}
-
-small, .font_small {
-	font-size: 0.8em;
-}
-h1 strong {
-	font-weight:normal;
-	letter-spacing:0.1875em;/*3px / 16px*/
-}
-
-#secondary h3, #primary h3  {
- 	border-bottom:2px solid #CACACA;
-    font-family:Arial, sans-serif;
-    font-size:1em;
-    font-weight: bold;
-    text-transform: uppercase;
-	padding-bottom:.25em;
-}
-
-#secondary h2, #primary h2  {
-	border-bottom:2px solid #CACACA;
-    font-family:Arial, sans-serif;
-    font-size:1.215em;
-    font-weight: bold;
-    text-transform: uppercase;
-	padding-bottom:.25em;
-}
 /* END HEADINGS */
 
 /* LAYOUT */
@@ -251,7 +144,6 @@ h1 strong {
 	margin:0 auto;
 	overflow:hidden;
 	width:100%;
->>>>>>> Victoria
 }
 
 #main {
@@ -290,47 +182,54 @@ h1 strong {
 /* END LAYOUT */	
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> Victoria
 #header{
 	max-width: 980px;
 	margin-top:5px;
 	margin-bottom: 15px;
 	margin: 0 auto;
+	clear:both;	
+	height:9em;
 }
+
 #utilities{
-	margin-bottom: 10px;
 	clear:both;
+	max-width: 980px;
+	margin-top:5px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	height: 44px;
+	border-bottom:1px solid #000000;
 	}
+	
 #social{
 	overflow:hidden;
 	float: left;
 	magin-top: 5px;
-	position: relative;
-	
+	position: relative;	
 }
+
 #search{
-	float:right;
-	overflow: hidden;	
+	float:right;		
 }
-#logo{
-	float:left;	
-	max-width: 100%;
+
+form.search {
+	padding-top: 20px
+	}
+
+#logo a img{
+	float:left;
+	width: 10%;	
 }
-<<<<<<< HEAD
 
-
-
-=======
 #middle {
 	max-width:940px;
 	margin:0 auto;
 	margin-top:15px;
 	clear:both;
 }
+
 #middle {
 	overflow:hidden;
 	padding-left:20px; /*older browsers*/
@@ -351,10 +250,12 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	font-size:18px;
 	padding-top: 2px;
 }
+
 #widgets{
 	max-width:940px;
 	margin:0px auto;
 }
+
 #widgets section.widgets-item{
 	width: 300px;
 	float:left;
@@ -363,7 +264,61 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	margin-bottom:10px;
 	
 }
->>>>>>> Victoria
+
+/* BOX STYLES */
+#button {
+	padding: 5px 25px 3px;
+	width: 140px;
+	display: block;
+	margin:auto;
+	margin-bottom: 10px;	
+	
+	}
+	
+#button a{
+	display:block;
+	font-size:18px;
+	padding-top: 2px;
+}
+
+.box-right {
+	width:43.83333333333333%; 
+	float:right;
+	height:220px;
+	display: inline-block;
+    vertical-align:top;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	margin-bottom: 10px;
+	}
+
+
+.box-left {
+	width:43.83333333333333%;
+	float:left;	
+	height:220px;
+	display: inline-block;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	}
+	
+.box-long {
+	width:92%;
+	display: inline-block;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	}
+	
+.box-long h3, .box-long p {
+	text-align: center;
+	}
 
 /* FORM STYLES */
 
@@ -371,7 +326,76 @@ textarea, input, select {
 	margin-bottom:6px;
 }
 
-/*  ---------------  BEGIN WORDPRESS-GENERATED SELECTORS  ---------------  */	
+/* LISTS */
+
+ul {
+margin-left: 1.25em;
+}
+
+ol {
+   margin-left: 1.75em;
+}-->
+
+p, ol, ul, dl {
+  margin-bottom: .75em;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+
+#primary ul, #secondary ul {
+    list-style-type: none;
+	margin-left:0px;
+		}
+		
+li.indented {
+	padding-left:1.25em;
+	
+	}
+
+/* END LISTS */
+
+/* NAV PAGE.PHP*/
+nav {
+	float:right;
+	width:90%;
+	display: block;
+	height:1.2em;
+	font-family:"Gill Sans",Helvetica,Arial,sans-serif;
+	padding-top:75px;	
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	line-height:1.2em;
+	float:left;
+	width:14%;  /*100/ number of list items*/
+	text-align:center;
+	
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+	}
+
+nav a strong{
+	display:block;	
+}
+
+nav a:hover strong,
+nav a:focus strong {
+	color:#625090;
+	}
+/* - END NAV PAGE.PHP- */
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
 .alignnone {
     margin: 5px 20px 20px 0;
 }
@@ -512,14 +536,14 @@ img.attachment-full {}
 /* The container wrapping ul.dropdown */
 #navwrap {
 /*float:left;*/
-width:100%;
-height: 50px;
-background: #600;
+/*width:100%; */
+float:right;
+/*background: #600;
 background: -moz-linear-gradient( top, #600, #300); /* CSS 3 */
-font: 1.0em "Segoe UI", "Lucida Grande", Verdana, Arial, sans-serif;
-border-top:1px solid #999;
-border-bottom:2px solid #000;
+font: Myriad Pro, Arial, sans-serif;
 margin-top:15px;
+padding:140px 70px 0 0;
+/*padding: 77px 34px;*/
 }
  
 /* Top level Unordered list */
@@ -532,19 +556,20 @@ padding: 0 10px;
  
 ul.dropdown  li{
 float:left; /* makes horiz list */
+padding: 3px;
 position:relative; /* hey Submenu ULs, appear below! */
 }
  
 ul.dropdown a {
 padding:12px; /*space the items, occupy entire height too.*/
-color:#eee;
+color:#000000;
 text-decoration:none;
-text-shadow:0 1px 0 #000;
+/*text-shadow:0 1px 0 #000;*/
 }
  
 /* Style the link hover */
 ul.dropdown li:hover a {
-background:#444;
+/*background:#444;*/
 border-top:1px solid #777;
 border-bottom: 1px solid #000;
 border-right:1px solid #666;
@@ -596,7 +621,7 @@ ul.dropdown ul li ul li:hover ul
  
 ul.dropdown li * a:hover {
 /* Change color of links when hovered */
-background: #600;
+/*background: #600;*/
 background: -moz-linear-gradient( top, #200, #400); /* CSS 3 */
 border-bottom:1px solid #900;
 border-top:1px solid #222;
