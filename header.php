@@ -17,6 +17,7 @@
 <!-- Begin Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/scripts.js"></script>
 <!-- End Scripts -->
 
 <!-- Begin Flex Slider -->
@@ -56,10 +57,15 @@
 <!-- begin logo -->
 <div id="logo">
 <a href="" title="">
-<img src="<?php bloginfo('template_directory'); ?>/images.jpg" />
+<img src="<?php bloginfo('template_directory'); ?>/images/logo.gif" />
 </a>
 </div><!-- end logo -->
 
+<!-- Start Toggle menu-->
+    <div id="toggle">
+    	<a href="#">&#8801;&nbsp;Menu</a>
+    </div>
+    <!-- END Toggle -->
 <!-- Begin new Navigation -->
 <?php  wp_nav_menu( array(
     'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
@@ -74,3 +80,6 @@
 
 
 </div> <!--end header -->
+<!-- END MAIN NAVIGATION -->
+			
+ <div id="middle">
