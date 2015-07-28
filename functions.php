@@ -16,7 +16,7 @@ Version: 1.0
 //Register my menu
 register_nav_menus(array(
 'main-menu' => __( 'Main' ),
-'footer-menu' => __('Footer')
+'Footer-menu' => __('Footer-menu')
 ));
 
 

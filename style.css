@@ -163,7 +163,39 @@ h1 strong {
 	padding-left:20px; /*older browsers*/
 	padding-left:1.25rem; /*20px /16px */
 }
-
+#news{
+	margin-top:10px;
+	padding-bottom: 10px;
+}
+div.news-widgets {
+	max-width: 940px;
+	margin-right: -20px;
+	margin-top:10px;
+	margin: 10px auto;
+}
+ div#news div.news-widgets article.news-item {
+	max-width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+div#news div.news-widgets article.news-item h2{
+	font-size: 9px;
+	font-style:italic;
+}
+div.title{
+	float:left;
+	max-width:60px;
+}
+div#news div.news-widgets article.news-item p.date{
+	/*float:right;
+	max-width:243px; */
+}
+ div#news p.read-more {
+	 clear:both;
+	 max-width: 940px;
+	font-style: italic;
+	margin: 0 auto;
+}
 #secondary {
 	float:right;
 	width:29.72972972972973%;/*220px / 740*/
@@ -220,7 +252,11 @@ form.search {
 
 #logo a img{
 	float:left;
+<<<<<<< HEAD
 	width: 10%;	
+=======
+	/*width: 10%;*/	
+>>>>>>> Victoria
 }
 
 #middle {
@@ -254,6 +290,7 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 #widgets{
 	max-width:940px;
 	margin:0px auto;
+	padding-bottom: 10px;
 }
 
 #widgets section.widgets-item{
@@ -262,8 +299,72 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	margin-right: 10px;
 	border:1px solid;
 	margin-bottom:10px;
+	text-align:center;
 	
 }
+#widgets section.widgets-item p{
+	margin-left: 5px;
+	text-align:center;
+}
+
+.fa-5x{
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+/* BOX STYLES */
+#button {
+	padding: 5px 25px 3px;
+	width: 140px;
+	display: block;
+	margin:auto;
+	margin-bottom: 10px;	
+	
+	}
+	
+#button a{
+	display:block;
+	font-size:18px;
+	padding-top: 2px;
+}
+
+.box-right {
+	width:43.83333333333333%; 
+	float:right;
+	height:220px;
+	display: inline-block;
+    vertical-align:top;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	margin-bottom: 10px;
+	}
+
+
+.box-left {
+	width:43.83333333333333%;
+	float:left;	
+	height:220px;
+	display: inline-block;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	}
+	
+.box-long {
+	width:92%;
+	display: inline-block;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	}
+	
+.box-long h3, .box-long p {
+	text-align: center;
+	}
 
 /* BOX STYLES */
 #button {
@@ -334,8 +435,12 @@ margin-left: 1.25em;
 
 ol {
    margin-left: 1.75em;
+<<<<<<< HEAD
 }-->
 
+=======
+}
+>>>>>>> Victoria
 p, ol, ul, dl {
   margin-bottom: .75em;
 }
@@ -542,7 +647,7 @@ float:right;
 background: -moz-linear-gradient( top, #600, #300); /* CSS 3 */
 font: Myriad Pro, Arial, sans-serif;
 margin-top:15px;
-padding:140px 70px 0 0;
+padding:100px 70px 0 0;
 /*padding: 77px 34px;*/
 }
  
@@ -627,55 +732,89 @@ border-bottom:1px solid #900;
 border-top:1px solid #222;
 }
 
+#toggle {
+	display: none;
+	position:absolute;
+	bottom: 4px;
+}
 
 
 
-footer{
+#footer{
 	padding-bottom: 20px;
 	clear: both;
 }
-div#footer{
+#menu-footer{
 	max-width:980px;
 	margin: 0 auto;
 }
-html body.home.page.page-id-9.page-template-default footer div#footer nav.footer-menu div.menu{
-		font-family: "Gotham Black", Arial, Helvetica, sans-serif;
+#menu-footer{
+	overflow:hidden;
+	}
+#menu-footer ul li {
+		font-family: Arial, Helvetica, sans-serif;
 		font-size: 1em;
-		color: #FFF;
+		color: #000000;
 		width: 113px;
 		float: left;
 		list-style-type: none;	
 		margin-right: 20px;	
 		}
 		
-	#menu-footer-menu > li:last-child {
+	#menu-footer ul li:last-child {
 		margin-right: 0;
 	}
 	
-	#menu-footer-menu > li a {
-		color: #FFF;
+	#menu-footer ul li a {
+		color: #000000;
 	}
 		
-	#menu-footer-menu ul.sub-menu li {
+	#menu-footer ul.sub-menu li {
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 14px;
 		list-style-type: none;
 		
 	}
 	
-	#menu-footer-menu ul.sub-menu li a {
-		color: #FFF;
+	#menu-footer ul.sub-menu li a {
+		color: #000000;
 		text-decoration: none;
 	}
 	
-	#menu-footer-menu ul.sub-menu li a:hover {
-		border-bottom: 1px solid #FFF;
-		color: #FFF;
+	#menu-footer ul.sub-menu li a:hover {
+		border-bottom: 1px solid #000000;
+		color: #000000;
 	}
 	
-	#menu-footer-menu ul.sub-menu li.current_page_item a {
-		color: #FFF;
-		border-bottom: 1px solid #FFF;
+	#menu-footer ul.sub-menu li.current_page_item a {
+		color: #000000;
+		border-bottom: 1px solid #000000;
 	}
 
 
+#site-info{
+	max-width: 980px;
+	margin: 0 auto;
+	clear:both;
+	border: 1px solid #000000;
+}
+#site-info p{
+	text-align:left;
+	color:#000000;
+}
+	/*Desctop screen set to 980px*/
+@media screen and (max-width: 980px) {
+	
+}
+	/*mobile screen set to 750px*/
+@media screen and (max-width: 750px) {
+	body {
+		padding: 0;
+	}
+	#logo a img {
+		display: none;
+	}
+	#toggle {
+		right: 10px;
+}
+}
