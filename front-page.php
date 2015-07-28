@@ -35,7 +35,7 @@
 <?php endwhile; //end loop1 ?>
 <button id="button"><a href="#">Join Now</a></button>
 </section>
-</div>
+
 
 <small>front-page.php</small>
 <?php get_footer(); ?>
