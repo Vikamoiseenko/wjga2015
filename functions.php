@@ -81,8 +81,34 @@ function get_my_title_tag() {
 	echo ' | ';
 	echo 'Seattle, WA';
 	}
-
-
+	
+// Get Child Pages 
+function get_child_pages() {
+	
+	global $post;
+	
+	rewind_posts(); // stop any previous loops 
+	query_posts(array('post_type' => 'page', 'posts_per_page' => -1, 'post_status' => publish,'post_parent' => $post->ID,'order' => 'ASC','orderby' => 'menu_order')); // query and order child pages 
+    
+	while (have_posts()) : the_post(); 
+	
+		$childPermalink = get_permalink( $post->ID ); // post permalink
+		$childID = $post->ID; // post id
+		$childTitle = $post->post_title; // post title
+		$childExcerpt = $post->post_excerpt; // post excerpt
+        
+		echo '<article id="page-excerpt-'.$childID.'" class="box-left">';
+		echo '<button id="button"><a href="'.$childPermalink.'">'.$childTitle.' &raquo;</a></button>';
+		echo '<p>'.$childExcerpt.' <a href="'.$childPermalink.'">Read More&nbsp;&raquo;</a></p>';
+		echo '</article>';
+        
+	endwhile;
+	
+	// reset query
+	wp_reset_query();
+        
+}
+//
 
 //i am using Mike's Sinkula flexslider
 function add_flexslider() {    
