@@ -11,6 +11,13 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+
+
 <link href="<?php bloginfo('template_directory'); ?>/flexslider.css" rel="stylesheet" type="text/css" />
 <!-- end style -->
 
@@ -70,7 +77,7 @@
 <?php  wp_nav_menu( array(
     'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
     'menu_class' => 'dropdown', //Adding the class for dropdowns
-    'container_id' => 'navwrap', //Add CSS ID to the containter that wraps the menu.
+    'container_id' => 'cssmenu', //Add CSS ID to the containter that wraps the menu.
     'fallback_cb' => 'wp_page_menu', //if wp_nav_menu is unavailable, WordPress displays wp_page_menu function, which displays the pages of your blog.
     )
       );

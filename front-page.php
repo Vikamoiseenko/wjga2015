@@ -34,7 +34,6 @@
 <button id="button"><a href="#">Join Now</a></button>
 </section>
 </div>
-
 <!-- new section -->
 <div id="news">
 <div class="news-widgets">
@@ -43,7 +42,7 @@
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 <article class="news-item" id="news-item-<?php the_ID(); ?>">
-<p class="date">Authored by <?php the_time('M j') ?> by <?php the_author(); //get author name ?> in <?php the_category(', ') ?></p>
+<p class="date">Authored by <?php the_author(); //get author name ?> <?php the_time('M j') ?> in <?php the_category(', ') ?></p>
 <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?>&nbsp;&raquo;</a></h2>
 <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_post_thumbnail(array(130,130)); ?></a>
 <?php the_excerpt(); ?>
@@ -51,9 +50,12 @@
 <?php endwhile; ?>
 <?php endif; ?>
 </div>
-<p class="read-more"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">More News &raquo;</a></p>
-
+<div id="calendar">
+	<?php get_sidebar('tertiary'); ?>
 </div>
+<p class="read-more"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">More News &raquo;</a></p>
+</div>
+
 <!-- end news section -->
 <small>front-page.php</small>
 <?php get_footer(); ?>
