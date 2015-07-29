@@ -132,9 +132,8 @@ h1 strong {
 	text-align: left;
 }
 
-img {
-	margin-bottom: 1.3em;	
-}
+
+
 
 /* END HEADINGS */
 
@@ -163,8 +162,6 @@ img {
 	font-size:1.1em;
 	padding-left:20px; /*older browsers*/
 	padding-left:1.25rem; /*20px /16px */
-	clear:both;
-	overflow:hidden;
 }
 
 #secondary {
@@ -275,13 +272,27 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	display: block;
 	margin:auto;
 	margin-bottom: 10px;	
+	
 	}
 	
 #button a{
 	display:block;
 	font-size:18px;
 	padding-top: 2px;
+}
+
+.box-right {
+	width:43.83333333333333%; 
+	float:right;
+	height:220px;
+	display: inline-block;
+    vertical-align:top;
+	text-align: center;
+	border:1px solid;
+	padding: 10px;
+	margin-bottom: 10px;
 	}
+
 
 .box-left {
 	width:43.83333333333333%;
@@ -293,11 +304,10 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	padding: 10px;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
-	margin-right: 5px;	
 	}
 	
 .box-long {
-	width:95%;
+	width:92%;
 	display: inline-block;
 	text-align: center;
 	border:1px solid;
@@ -309,7 +319,6 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 .box-long h3, .box-long p {
 	text-align: center;
 	}
-
 
 /* FORM STYLES */
 
