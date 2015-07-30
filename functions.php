@@ -104,7 +104,11 @@ function get_my_title_tag() {
 	echo 'Seattle, WA';
 	}
 
-
+function get_seo() {
+	$myPosting = get_post(186);
+	$mySEO = $myPosting->post_content;
+	echo $mySEO;
+}
 
 //i am using Mike's Sinkula flexslider
 function add_flexslider() {    

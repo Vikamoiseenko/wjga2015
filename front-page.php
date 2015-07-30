@@ -8,29 +8,43 @@
 <i class="fa fa-user fa-5x"></i>
 </a>
 <h3>Become a Member</h3>
-<?php while( have_posts() ): the_post(); //start loop1?>
-<?php the_content(''); //get the home page content ?>
-<?php endwhile; //end loop1 ?>
+<?php
+$page_id = 183;
+$page_data = get_page ( $page_id );
+$content = $page_data->post_excerpt;
+$title = $page_data->post_title;
+echo apply_filters( 'the_content', $page_data->post_excerpt );
+?>
 <button id="button"><a href="#">Join Now</a></button>
 </section>
+
+<section class="widgets-item">
+<a href="" title="">
+<i class="fa fa-trophy fa-5x"></i>
+</a>
+<h3>Find a Tournament</h3>
+<?php
+$page_id = 186;
+$page_data = get_page ( $page_id );
+$content = $page_data->post_excerpt;
+$title = $page_data->post_title;
+echo apply_filters( 'the_content', $page_data->post_excerpt );
+?>
+<button id="button"><a href="#">Join Now</a></button>
+</section>
+
 <section class="widgets-item">
 <a href="" title="">
 <i class="fa fa-trophy fa-5x"></i>
 </a>
 <h3>Become a Member</h3>
-<?php while( have_posts() ): the_post(); //start loop1?>
-<?php the_content(''); //get the home page content ?>
-<?php endwhile; //end loop1 ?>
-<button id="button"><a href="#">Join Now</a></button>
-</section>
-<section class="widgets-item">
-<a href="" title="">
-<i class="fa fa-trophy fa-5x"></i>
-</a>
-<h3>Become a Member</h3>
-<?php while( have_posts() ): the_post(); //start loop1?>
-<?php the_content(''); //get the home page content ?>
-<?php endwhile; //end loop1 ?>
+<?php
+$page_id = 186;
+$page_data = get_page ( $page_id );
+$content = $page_data->post_excerpt;
+$title = $page_data->post_title;
+echo apply_filters( 'the_content', $page_data->post_excerpt );
+?>
 <button id="button"><a href="#">Join Now</a></button>
 </section>
 </div>
