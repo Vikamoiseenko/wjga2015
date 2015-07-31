@@ -49,9 +49,9 @@
 <!-- begin search form -->
 <div id="search">
 <form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
-<i class="fa fa-search fa-2x"></i>
-<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
-<input type="submit" id="searchsubmit" value="submit" />
+<div class="search"><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="" />
+</div>
 </form> <!-- end search form -->
 </div>
 </div> <!-- end utiliti menu -->

@@ -89,15 +89,15 @@ height: auto;
 div.flexslider blockquote.home {
 	position: absolute;
 	/*top: 20px; */
-	bottom: 20px;
+	bottom: 50px;
 	right: 20px;
 	text-align: left;
 	color: #FFF;
 	text-shadow: 2px 2px #000;
-	max-width: 500px;
+	max-width: 380px;
 	z-index: 3;
 	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
-	font-size: 1.5em;
+	font-size: 1em;
 	line-height: 150%;
 	padding: 4px 10px;
 	}	

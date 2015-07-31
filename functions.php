@@ -63,7 +63,20 @@ function my_register_sidebars() {
 		/* Repeat register_sidebar() code for additional sidebars. */
 }
 
-//create pege excerpts
+	/* Register the 'events' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'events',
+			'name' => __( 'Events Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
+
+//create page excerpts
 add_post_type_support('page', 'excerpt');
 //
 //Get my title tag
@@ -96,6 +109,34 @@ function get_seo() {
 	$mySEO = $myPosting->post_content;
 	echo $mySEO;
 }
+
+// Get Child Pages 
+function get_child_pages() {
+	
+	global $post;
+	
+	rewind_posts(); // stop any previous loops 
+	query_posts(array('post_type' => 'page', 'posts_per_page' => -1, 'post_status' => publish,'post_parent' => $post->ID,'order' => 'ASC','orderby' => 'menu_order')); // query and order child pages 
+    
+	while (have_posts()) : the_post(); 
+	
+		$childPermalink = get_permalink( $post->ID ); // post permalink
+		$childID = $post->ID; // post id
+		$childTitle = $post->post_title; // post title
+		$childExcerpt = $post->post_excerpt; // post excerpt
+        
+		echo '<article id="page-excerpt-'.$childID.'" class="box-left">';
+		echo '<button id="button"><a href="'.$childPermalink.'">'.$childTitle.' &raquo;</a></button>';
+		echo '<p>'.$childExcerpt.' <a href="'.$childPermalink.'">Read More&nbsp;&raquo;</a></p>';
+		echo '</article>';
+        
+	endwhile;
+	
+	// reset query
+	wp_reset_query();
+        
+}
+//
 
 //i am using Mike's Sinkula flexslider
 function add_flexslider() {    
