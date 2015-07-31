@@ -12,7 +12,7 @@
  
 	<?php endwhile; ?>
 	<?php endif; ?>
-    
+    <?php get_child_pages(); ?>
 </div><!-- END CONTENT -->
 
 <!-- START SIDEBAR -->
