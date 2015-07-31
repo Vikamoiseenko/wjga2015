@@ -5,26 +5,22 @@
 <title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
 <!-- begin meta -->
 <meta name="viewport" content="user-scalablo=no, initial-scale=1.0, maximum-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- end meta -->
 
 <!-- begin style -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
-
-
 <link href="<?php bloginfo('template_directory'); ?>/flexslider.css" rel="stylesheet" type="text/css" />
 <!-- end style -->
 
 <!-- Begin Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/scripts.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/scripts.js"></script>
 <!-- End Scripts -->
 
 <!-- Begin Flex Slider -->
@@ -68,11 +64,6 @@
 </a>
 </div><!-- end logo -->
 
-<!-- Start Toggle menu-->
-    <div id="toggle">
-    	<a href="#">&#8801;&nbsp;Menu</a>
-    </div>
-    <!-- END Toggle -->
 <!-- Begin new Navigation -->
 <?php  wp_nav_menu( array(
     'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
