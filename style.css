@@ -168,9 +168,17 @@ h1 strong {
 #news{
 	/*margin-top:10px;
 	padding-bottom: 10px;*/
-	max-width: 620px;
-	float:left;
+	/*max-width: 620px;
+	float:left; */
 	margin-bottom: 10px;
+}
+#latest {
+	border: 1px solid #000000;
+	max-width: 608px;
+	margin-bottom:10px;
+}
+#latest h3{
+	text-align:left;
 }
 div.news-widgets {
 	/*margin-right: -20px;*/
@@ -178,9 +186,11 @@ div.news-widgets {
 	margin: 10px auto;*/
 	margin-right: -20px;
 	overflow: hidden;
+	max-width:620px;
+	float:left;
 }
  div#news div.news-widgets article.news-item {
-	max-width: 300px;
+	max-width: 298px;
 	float: left;
 	border:1px solid #000000;
 	margin: 0 10px 10px 0;
@@ -213,12 +223,10 @@ div.info{
  .news-item div.info div.headline {
 	margin-bottom: 5px;
 	padding-top: 5px;
-	max-width: 245px;
+	max-width: 294px;
 	height:66px;
-	float:right;
 	padding-right: 5px;
 	border: 1px solid #000000;
-
 
 }
 .head-title {
@@ -240,7 +248,10 @@ article#news-item p{
  div#news p.read-more {
 	 clear:both;
 	font-style: italic;
-	margin: 0 auto;
+	text-align:center;
+	border: 1px solid #000000;
+	margin: 0 px auto;
+	width: 220px;
 }
 #secondary {
 	float:right;
@@ -248,11 +259,10 @@ article#news-item p{
 	font-size:1.1em;
 }
 #calendar {
-	
-}
- div#tertiary {
 	max-width: 278px;
 	float:right;
+}
+ div#tertiary {
 	padding:20px 10px;
 	margin-bottom: 20px;
 }
@@ -273,7 +283,7 @@ article#news-item p{
 	margin-bottom: 15px;
 	margin: 0 auto;
 	clear:both;	
-	height:9em;
+	height: 13em;
 }
 
 #utilities{
@@ -284,7 +294,7 @@ article#news-item p{
 	padding-top: 20px;
 	padding-bottom: 10px;
 	margin: 0 auto;
-	height: 44px;
+	height: 33px;
 	border-bottom:1px solid #000000;
 	}
 	
@@ -294,15 +304,40 @@ article#news-item p{
 	magin-top: 5px;
 	position: relative;	
 }
-
-#search{
-	float:right;		
+.fa-2x {
+	padding-right: 10px;
 }
-
+#wjga {
+	width:386px;
+	float: left;
+}
+#wjga p{
+	text-align:center;
+	margin-right:-260px;
+}
+.search{
+	border: 1px solid #000000;	
+	float: right;
+	height: 20px;
+}
+#searchsubmit {
+	background: rgba(0, 0, 0, 0) url(images/Search-16.png);
+	background-repeat: no-repeat;
+	width:25px;
+	cursor:pointer;
+	border:none;
+}
+	
 form.search {
-	padding-top: 20px
+	padding-top: 20px;
 	}
-
+	#search input#s {
+		width: 200px;
+		border:none;
+	}
+#search .fa-1x {
+	/*border: 1px solid magenta;*/
+}
 #logo a img{
 	float:left;
 	/*width: 10%;*/	
@@ -617,9 +652,10 @@ img.attachment-full {}
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  z-index:50;
- 
+    z-index:50;
+
 }
+
 #cssmenu:after,
 #cssmenu > ul:after {
   content: ".";
@@ -919,19 +955,6 @@ img.attachment-full {}
 
 /*--End navigation menu --*/
 
-
-
-
-
-
-#toggle {
-	display: none;
-	position:absolute;
-	bottom: 4px;
-}
-
-
-
 #footer{
 	padding-bottom: 20px;
 	clear: both;
@@ -1002,10 +1025,11 @@ img.attachment-full {}
 @media screen and (max-width: 980px) {
     /* Styles */
     
-    body {
-        /*background-color: gray;*/        
+	#menu-footer-menu >li {
+		margin-right: 2.12%;
+		width: 14.89%;
 	}
-	
+		
 }
 	
 
@@ -1038,6 +1062,10 @@ img.attachment-full {}
 		margin-bottom: 20px;
 	}
     	
+#menu-footer-menu > li {
+margin-right: 2.12%;
+width: 14.89%;	
+}
 }
 
 
@@ -1045,6 +1073,17 @@ img.attachment-full {}
 @media screen and (max-width: 750px) {
     /* Styles */
     
+	#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  z-index:0;
+ 
+}
+#menu-footer {
+	display: none;
+}
 	body {
 		padding: 0;
         /*background-color: pink;*/
@@ -1052,9 +1091,6 @@ img.attachment-full {}
 	#logo a img {
 		display: none;
 	}
-	#toggle {
-		right: 10px;
-    }
 }
 
 
@@ -1106,5 +1142,4 @@ img.attachment-full {}
 	}
     
    	
->>>>>>> cepetrie
 }

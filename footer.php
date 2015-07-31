@@ -7,12 +7,13 @@
 <i class="fa fa-youtube fa-2x"></i>
 <i class="fa fa-instagram fa-2x"></i>
 </div> <!-- end social icon -->
+<div id="wjga"><p>Washington Junior Association</p></div>
 <!-- begin search form -->
 <div id="search">
 <form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
-<i class="fa fa-search fa-2x"></i>
-<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
-<input type="submit" id="searchsubmit" value="submit" />
+<div class="search"><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="" />
+</div>
 </form> <!-- end search form -->
 </div>
 </div> <!-- end utiliti menu -->
