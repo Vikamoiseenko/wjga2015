@@ -295,7 +295,7 @@ article#news-item p{
 	position: relative;	
 }
 
-#search{
+#search {
 	float:right;		
 }
 
@@ -382,7 +382,6 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 .box-left {
 	width:43.83333333333333%;
 	float:left;	
-	height:220px;
 	display: inline-block;
 	text-align: center;
 	border:1px solid;
@@ -457,6 +456,17 @@ li.indented {
 ul.sub-navigation-items li li{
     padding-left:1.25em;    
     }
+
+.column ul, .column li{
+    margin:0;
+    padding:0 0 0 15px;
+    list-style-type: none;
+}
+
+.column{
+    float: left;
+    margin: 0 20px 0 0;
+}
 
 /* END LISTS */
 
@@ -598,7 +608,10 @@ img.attachment-medium {}
 img.attachment-large {}
 img.attachment-full {}
 
+img.attachment-post-thumbnail {
+    margin-bottom: 20px;
 
+}
 /* Navigation Menu goes Here */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -1003,7 +1016,7 @@ img.attachment-full {}
     /* Styles */
     
     body {
-        /*background-color: gray;*/        
+        background-color: gray;        
 	}
 	
 }
@@ -1015,7 +1028,7 @@ img.attachment-full {}
 	body {
 		padding: 0;
         font-size:85%;
-        /*background-color: green;*/
+        background-color: green;
 	}
 
 
@@ -1047,12 +1060,14 @@ img.attachment-full {}
     
 	body {
 		padding: 0;
-        /*background-color: pink;*/
-	}
-	#logo a img {
+        background-color: pink;
+    }
+	
+    #logo a img {
 		display: none;
 	}
-	#toggle {
+	
+    #toggle {
 		right: 10px;
     }
 }
@@ -1063,7 +1078,7 @@ img.attachment-full {}
 	
 	body {
 		padding: 0;
-        /*background-color: purple;*/
+        background-color: purple;
 	}
     
     #primary {
@@ -1085,10 +1100,13 @@ img.attachment-full {}
 	body {
 		font-size:85%;
         padding: 0;
-        /*background-color: yellow;*/        
-
-	}    
+        background-color: yellow;
+    }
     
+    .box-long {
+	width:94%;
+    float: none;
+	}
 	
 }
 
@@ -1097,14 +1115,16 @@ img.attachment-full {}
 	
 	body {
 		padding: 0;
-        /*background-color: red;*/
+        background-color: red;
 	}
     
     article.box-left {
-	width:95%;
+	width:90%;
 	float:none;		
-	}
+	}  
     
-   	
->>>>>>> cepetrie
+    .box-long {
+	width:90%;
+    float: none;
+	}
 }
