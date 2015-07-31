@@ -1,25 +1,29 @@
 <aside id="primary"><!--START SIDEBAR PRIMARY-->
 
-	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
-	<?php dynamic_sidebar( 'primary' ); ?>
-
-	<?php else : ?>
+   
+     <!-- Begin Sub-Navigation -->
+    <?php if (is_page()) : // if we are in "pages"... ?>
+    <h2 >
+    <?php echo get_the_title($post->post_parent); // ...get the gateway page title ?></h2>
+    <ul class="sub-navigation-items"><?php 
     
-     <div class="widget">
-		<h3>Search</h3>
-		<?php get_search_form(); ?>
-	 </div>
+    if ($post->post_parent) { // if the page has a parent...
         
+        wp_list_pages(array('child_of' => $post->post_parent, 'title_li' => __(''))); // ...list the sub-pages with no title
         
-     <div class="widget">	
-		<h3>Categories</h3>
-   		<ul>
-      	<?php wp_list_categories('title_li='); ?>
-   		</ul>
-     </div>
+    } else { // if the page does not have a parent...
+    
+        wp_list_pages(array('child_of' => $post->ID, 'title_li' => __(''))); // ...list the sub-pages with no title
+     
+    }
+    
+    ?></ul>
+    <?php endif; // end if we are in "pages" ?>
 
-	<?php endif; ?>
-
+	
 </aside><!--END SIDEBAR PRIMARY-->
+
+
+
 
 
