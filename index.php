@@ -1,5 +1,6 @@
 <?php get_header(); ?>
   
+
 <!-- START CONTENT -->
 <div id="content" class="index">
 <?php if (have_posts()) : ?>
@@ -12,6 +13,7 @@
             <span class="cat"><?php the_category(', ') ?></span>
             <span class="author">by <?php the_author_posts_link(); ?></span>
 		</p>
+
         <?php if ( has_post_thumbnail() ) {// check if the post has a Post Thumbnail assigned to it.
             the_post_thumbnail();
         } ?>
@@ -25,9 +27,6 @@
 		</nav>
 <?php endif; ?>
 </div><!-- END CONTENT -->
-
-<!-- START PRIMARY SIDEBAR -->
-<?php get_sidebar('primary'); ?>
 
 <!-- START SECONDARY SIDEBAR -->
 <?php get_sidebar('secondary'); ?>

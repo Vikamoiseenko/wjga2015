@@ -21,10 +21,10 @@
 <div id="footer">
 <!-- begin footer menu -->
 <div id="menu-footer">
-<div class="footer-menu">
-<?php wp_nav_menu(array('theme_location' => 'Footer-menu' ) ); ?>
-</div>
-</div> <!-- end footer menu -->
+    <nav class="footer-main">
+    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+    </nav>
+    </div> <!-- end footer menu -->
 
 <!-- Begin site inform -->
 <div id="site-info">

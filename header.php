@@ -48,9 +48,9 @@
 </div> <!-- end social icon -->
 <!-- begin search form -->
 <div id="search">
-<form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
-<div class="search"><input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
-<input type="submit" id="searchsubmit" value="" />
+<form method="get" id="searchform" class="searchform" action="<?php bloginfo('home'); ?>/">
+<div class="search"><input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+<input type="submit" name="submit" id="searchsubmit" value="Search" />
 </div>
 </form> <!-- end search form -->
 </div>
@@ -59,7 +59,7 @@
 <div id="header">
 <!-- begin logo -->
 <div id="logo">
-<a href="" title="">
+<a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
 <img src="<?php bloginfo('template_directory'); ?>/images/logo.gif" />
 </a>
 </div><!-- end logo -->

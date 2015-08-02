@@ -171,10 +171,11 @@ h1 strong {
 	/*max-width: 620px;
 	float:left; */
 	margin-bottom: 10px;
+	clear:both;
 }
 #latest {
 	border: 1px solid #000000;
-	max-width: 608px;
+	max-width: 605px;
 	margin-bottom:10px;
 }
 #latest h3{
@@ -186,14 +187,14 @@ div.news-widgets {
 	margin: 10px auto;*/
 	margin-right: -20px;
 	overflow: hidden;
-	max-width:620px;
+	max-width:612px;
 	float:left;
 }
  div#news div.news-widgets article.news-item {
 	max-width: 298px;
 	float: left;
 	border:1px solid #000000;
-	margin: 0 10px 10px 0;
+	margin: 0 6px 10px 0;
 	height: 400px;
 	}
 div#news div.news-widgets article.news-item h2{
@@ -223,9 +224,9 @@ div.info{
  .news-item div.info div.headline {
 	margin-bottom: 5px;
 	padding-top: 5px;
-	max-width: 294px;
+	/*max-width: 294px;*/
 	height:66px;
-	padding-right: 5px;
+	/*padding-right: 5px;*/
 	border: 1px solid #000000;
 
 }
@@ -241,10 +242,14 @@ div.title{
 	max-width:60px;
 }
 
-article#news-item p{
+article #news-item .news-item p{
 	padding: 5px;
 	text-align:center;
+	font-style:italic;
+	border: 1px solid magenta;
 }
+
+
  div#news p.read-more {
 	 clear:both;
 	font-style: italic;
@@ -253,19 +258,43 @@ article#news-item p{
 	margin: 0 px auto;
 	width: 220px;
 }
+div#news a.read-more{
+	text-align:center;
+	text-decoration:underline;
+	color:#AE1416;
+}
 #secondary {
 	float:right;
 	width:29.72972972972973%;/*220px / 740*/
 	font-size:1.1em;
 }
 #calendar {
-	max-width: 278px;
+	max-width: 300px;
 	float:right;
+<<<<<<< HEAD
+=======
+	clear:both;
+	overflow:hidden;
+	margin-top: -878px;
+	margin-right:20px;
+>>>>>>> Victoria
 }
  div#tertiary {
-	padding:20px 10px;
 	margin-bottom: 20px;
+	border: 1px solid magenta;
 }
+ h3.widget-title{
+	 border: 1px solid red;
+	 padding: 7px;
+ }
+ ol.hfeed.vcalendar {
+	 margin: 10px;
+	 text-align: center;
+ }
+ p.tribe-events-widget-link {
+	 text-align:center;
+	 text-decoration: underline;
+ }
 #primary {
 	float:left;
 	width:19.14893617021277%;/*180px / 940px */
@@ -327,6 +356,7 @@ article#news-item p{
 	width:25px;
 	cursor:pointer;
 	border:none;
+	text-indent: -9999px;
 }
 	
 form.search {
@@ -363,7 +393,7 @@ form.search {
 }
 html body.home.page.page-id-9.page-template-default div#widgets section.widgets-item button#button {
 	padding: 5px 25px 3px;
-	width: 140px;
+	width: 160px;
 	display: block;
 	margin:auto;
 	margin-bottom: 10px;
@@ -382,17 +412,19 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 }
 
 #widgets section.widgets-item{
-	width: 300px;
+	width: 298px;
 	float:left;
 	margin-bottom: 20px;
 	border:1px solid #000000;
 	text-align:center;
-	margin-right:11px;
+	margin-right:9px;
+	height: 350px;
 	
 }
 #widgets section.widgets-item p{
 	/*margin-left: 5px;*/
 	text-align:center;
+	height: 150px;
 }
 
 .fa-5x{
@@ -1125,7 +1157,14 @@ width: 14.89%;
         border: none;
         width:100%; 
     }
+<<<<<<< HEAD
     
+=======
+    #menu-footer {
+	display: none;
+}
+
+>>>>>>> Victoria
     		
 }
 	
@@ -1143,7 +1182,14 @@ width: 14.89%;
 	width:94%;
     float: none;
 	}
+<<<<<<< HEAD
 	
+=======
+	#menu-footer {
+	display: none;
+}
+
+>>>>>>> Victoria
 }
 
 /* Mobile Screen Set to 400px or Below */
@@ -1158,7 +1204,14 @@ width: 14.89%;
 	width:90%;
 	float:none;		
 	}  
+<<<<<<< HEAD
     
+=======
+    #menu-footer {
+	display: none;
+}
+
+>>>>>>> Victoria
     .box-long {
 	width:90%;
     float: none;

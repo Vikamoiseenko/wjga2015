@@ -127,7 +127,7 @@ function get_child_pages() {
         
 		echo '<article id="page-excerpt-'.$childID.'" class="box-left">';
 		echo '<button id="button"><a href="'.$childPermalink.'">'.$childTitle.' &raquo;</a></button>';
-		echo '<p>'.$childExcerpt.' <a href="'.$childPermalink.'">Read More&nbsp;&raquo;</a></p>';
+		echo '<p id>'.$childExcerpt.' <a href="'.$childPermalink.'"> Read More&nbsp;&raquo;</a></p>';
 		echo '</article>';
         
 	endwhile;
