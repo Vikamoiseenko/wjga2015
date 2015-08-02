@@ -1,27 +1,37 @@
+
 <?php get_header(); ?>
-<!-- Begin Flex Slider -->
-<div id="cont">
-<div id="content">
+   
+    <!-- START PRIMARY SIDEBAR -->
+<?php get_sidebar('primary'); ?>
+    
+<!-- START CONTENT -->
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<div id="content" class="single">
+    <strong class="breadcrumb"><?php if (function_exists('bcn_display')) { bcn_display(); } ?></strong>
+        <h2><?php the_title(); ?></h2>     
+    <p class="postmetadata">
+    	<span class="date">Posted on <?php the_time('F jS, Y') ?></span> in 
+		<span class="cat"><?php the_category(', ') ?></span>
+		<span class="author">by <?php the_author_posts_link(); ?></span>
+        <span class="comments">with <?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span>
+    </p>
+    <?php the_content('More &raquo;'); ?>
+    <p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?>
+		<nav class="post-nav">            
+			<div class="alignleft"><?php previous_post_link('&laquo; %link', '%title', true) ?></div>
+			<div class="alignright"><?php next_post_link('%link &raquo;', '%title', true) ?></div>
+    </nav>
+    
+    <?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
+	<?php comments_template(); ?>
+    <?php endwhile; else: ?>
+    <p>Sorry, we can't help you find your posts</p>
+    <?php endif; ?>
 </div>
-</div>
-<!-- End Flex Slider -->
-<!-- Begin Text -->
-<div id="wid">
-<div id="widgets">
-	<?php get_sidebar(); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //start the loop ?>
-<article id="post-<?php the_ID();?>" class="post">
-<h1><?php the_title(); //get the page or posting title ?></h1>
-<small>Posted on <?php the_time('F j, Y'); //get the time ?> by <?php the_author(); //get author name ?> in <?php the_category(','); //get the category?></small>
-<?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
-<?php the_content(''); //get page or posting written content ?>
-<?php endwhile; endif; //end the loop ?>
-<small>single.php</small>
-</article>
-</div>
-</div>
-<!-- End Text -->
-<!-- Begin Sidebar -->
-<!-- End Sidebar -->
-<!-- Begin Footer -->
+<!-- END CONTENT -->
+
+<!-- SECONDARY SIDEBAR -->
+<?php get_sidebar('secondary'); ?>
+
+<!-- FOOTER -->
 <?php get_footer(); ?>

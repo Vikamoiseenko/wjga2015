@@ -1,21 +1,46 @@
-<!--START SIDEBAR SECONDARY-->
-<aside id="secondary">
+<?php if ( is_active_sidebar( 'secondary' ) ) : ?> <!--START SIDEBAR SECONDARY-->  
 
-	<?php if ( is_active_sidebar( 'secondary' ) ) : ?>
+
+		<div id="secondary" class="sidebar">
 
 		<?php dynamic_sidebar( 'secondary' ); ?>
 
+	</div>
+
 	<?php else : ?>
-    
-        <div class="widget">
-            <h3>CONTACT US</h3>
-            <p class="aligncenter">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>            	     
-        </div>
-        
-        
+ <?php /*?> 
+DEFAULT CODE: 
+<?php */?>
+        <!-- Categories -->
+		<ul>
+        <h3>Events Calendar</h3>      
+        <?php get_links_list(); ?>
+		</ul>
+    	<!-- End Calendar -->
+
+        <!-- Twitter Feed -->
+        <ul>
+            <h3>Twitter</h3>
+			<?php wp_list_categories('title_li='); ?>
+		</ul>
+        <!-- END Twitter -->
+
+        <!-- DONATE BUTTON -->
+        <ul>
+            <h3>DONATE</h3>
+		</ul>
+        <!-- END DONATE -->
+
+        <!-- Newsletter BUTTON -->
+        <ul>
+            <h3>NEWSLETTER</h3>
+		</ul>
+        <!-- END DONATE -->
+
+
 
 	<?php endif; ?>
-    
-</aside><!--END SIDEBAR SECONDARY-->
+
+<!--END SIDEBAR SECONDARY-->
 
 

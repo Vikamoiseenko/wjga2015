@@ -10,11 +10,12 @@
 <?php
 $page_id = 183;
 $page_data = get_page ( $page_id );
+$page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
 echo apply_filters( 'the_content', $page_data->post_excerpt );
+echo '<button id="button"><a href="'.$page_link.'">Join Now&nbsp;&raquo;</a></button>'
 ?>
-<button id="button"><a href="#">Join Now</a></button>
 </section>
 
 <section class="widgets-item">
@@ -25,11 +26,12 @@ echo apply_filters( 'the_content', $page_data->post_excerpt );
 <?php
 $page_id = 186;
 $page_data = get_page ( $page_id );
+$page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
 echo apply_filters( 'the_content', $page_data->post_excerpt );
+echo '<button id="button"><a href="'.$page_link.'">Schedule&nbsp;&raquo;</a></button>'
 ?>
-<button id="button"><a href="#">Join Now</a></button>
 </section>
 
 <section class="widgets-item">
@@ -40,11 +42,12 @@ echo apply_filters( 'the_content', $page_data->post_excerpt );
 <?php
 $page_id = 186;
 $page_data = get_page ( $page_id );
+$page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
 echo apply_filters( 'the_content', $page_data->post_excerpt );
+echo '<button id="button"><a href="'.$page_link.'">Points&nbsp;&raquo;</a></button>'
 ?>
-<button id="button"><a href="#">Join Now</a></button>
 </section>
 </div>
 <!-- new section -->
@@ -80,10 +83,9 @@ the_post_thumbnail();
 <div id="calendar">
 	<?php get_sidebar('tertiary'); ?>
 </div>
-<p class="read-more"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">More News &raquo;</a></p>
+<p class="read-more"><a href="<?php the_permalink() ?>" class="read-more" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">More News &raquo;</a></p>
 </div>
 </div> <!-- end middle -->
 
 <!-- end news section -->
-<small>front-page.php</small>
 <?php get_footer(); ?>
