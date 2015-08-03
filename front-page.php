@@ -50,7 +50,7 @@ echo '<button id="button"><a href="'.$page_link.'">Points&nbsp;&raquo;</a></butt
 ?>
 </section>
 </div>
-<!-- new section -->
+<!-- news section -->
 <div id="news">
 <div class="news-widgets">
 <div id="latest">
@@ -80,6 +80,7 @@ the_post_thumbnail();
 <?php endif; ?>
 <?php get_child_pages(); ?>
 </div>
+
 <div id="calendar">
 	<?php get_sidebar('tertiary'); ?>
 </div>
