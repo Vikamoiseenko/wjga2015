@@ -276,6 +276,13 @@ div#news a.read-more{
 	width:29.72972972972973%;/*220px / 740*/
 	font-size:1.1em;
 }
+
+#blog {
+	float:left;
+	width:29.72972972972973%;/*220px / 740*/
+	font-size:1.1em;
+}
+
 #calendar {
 	max-width: 300px;
 	float:right;
