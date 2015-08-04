@@ -276,6 +276,13 @@ div#news a.read-more{
 	width:29.72972972972973%;/*220px / 740*/
 	font-size:1.1em;
 }
+
+#blog {
+	float:left;
+	width:29.72972972972973%;/*220px / 740*/
+	font-size:1.1em;
+}
+
 #calendar {
 	max-width: 300px;
 	float:right;
@@ -404,7 +411,11 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	font-size:18px;
 	padding-top: 2px;
 }
-
+#gallery{
+	max-width:65.1%;
+	float:left;
+	overflow:hidden;
+}
 #widgets{
 	/*margin:0px auto;
 	padding-bottom: 10px;
@@ -442,7 +453,6 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
     }
 
 .box-left {
-	width:43.83333333333333%;
 	float:left;	
 	display: inline-block;
 	text-align: center;
@@ -461,7 +471,9 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 article.box-left {
     overflow: hidden;
     margin-right: -5px;
-	height: 250px;
+    height: 250px;
+    margin-right: 10px;
+    max-width: 43%;
 }
 	
 .box-long {
@@ -1277,7 +1289,7 @@ div.news-widgets {
  div#news div.news-widgets article.news-item {
 	max-width: 100%;
 	}
-
+    		
 div.news-widgets {
 	max-width:100%;
 }
