@@ -449,7 +449,6 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
     }
 
 .box-left {
-	width:43.83333333333333%;
 	float:left;	
 	display: inline-block;
 	text-align: center;
@@ -468,7 +467,9 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 article.box-left {
     overflow: hidden;
     margin-right: -5px;
-	height: 250px;
+    height: 250px;
+    margin-right: 10px;
+    max-width: 43%;
 }
 	
 .box-long {
