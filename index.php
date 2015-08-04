@@ -14,9 +14,6 @@
             <span class="author">by <?php the_author_posts_link(); ?></span>
 		</p>
 
-        <?php if ( has_post_thumbnail() ) {// check if the post has a Post Thumbnail assigned to it.
-            the_post_thumbnail();
-        } ?>
 		<?php the_content(); ?>
      	<?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
 
@@ -27,6 +24,9 @@
 		</nav>
 <?php endif; ?>
 </div><!-- END CONTENT -->
+
+<!-- START BLOG SIDEBAR -->
+<?php get_sidebar('blog'); ?>
 
 <!-- START SECONDARY SIDEBAR -->
 <?php get_sidebar('secondary'); ?>
