@@ -1,31 +1,34 @@
 <?php get_header(); ?>
-<!-- Begin Flex Slider -->
-<div id="cont">
+
+<!-- Begin Content -->
 <div id="content">
- <div class="flexslider">
-<ul class="slides">
-<li><img src="<?php bloginfo('template_directory'); ?>/images/m.jpg" width="940" height="300" alt="Image One"></li>
-<li><img src="<?php bloginfo('template_directory'); ?>/images/strawberry.jpg" width="940" height="300" alt="Image Two"></li>
-<li><img src="<?php bloginfo('template_directory'); ?>/images/sandwich.jpg" width="940" height="300" alt="Image Three"></li>
-</ul>
+    
+    <article id="page-content-<?php the_ID(); ?>" class="page-content">    
+    <h2>Search Results:</h2>
+    <?php if (have_posts()) : ?>
+    <p>Here's what we found for you...</p>
+    <?php while (have_posts()) : the_post(); ?>
+    <div class="page-excerpt" id="page-excerpt-<?php the_ID(); ?>">
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?>&nbsp;&raquo;</a></h3>
+    <?php the_excerpt(); // page excerpts ?>
+    <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">View &raquo;</a></p>
+    </div>
+    <?php endwhile; ?>
+    <ul class="post-navigation">
+    <li class="post-navigation-previous"><?php previous_posts_link( '&laquo;&nbsp;Previous' ) ?></li>
+    <li class="post-navigation-next"><?php next_posts_link( 'Next&nbsp;&raquo;'); ?></li>
+    </ul>
+   	<section class="search-again">
+    <p>Still not satisfied... Try another search?</p>
+    <?php get_search_form(); ?>
+    </section>
+    <?php else : ?>
+    <p>No posts found. Try a different search?</p>
+    <?php get_search_form(); ?>
+    <?php endif; ?> 
+    </article>
+    
 </div>
+<!-- End Content -->
 </div>
-</div>
-<!-- End Flex Slider -->
-<!-- Begin Text -->
-<div id="wid">
-<div id="widgets">
-<section class="widget-item">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); //start the loop ?>
-<h1><a href="<?php the_permalink(); ?>"><?php the_title(); //get the page or posting title ?></a></h1>
-<?php the_content(''); //get page or posting written content ?>
-<?php endwhile; endif; //end the loop ?>
-<small>search.php</small>
-</section>
-</div>
-</div>
-<!-- End Text -->
-<!-- Begin Sidebar -->
-<!-- End Sidebar -->
-<!-- Begin Footer -->
 <?php get_footer(); ?>

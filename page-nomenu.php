@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: No Menu
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="main">                
@@ -16,7 +22,7 @@
  
 	<?php endwhile; ?>
 	<?php endif; ?>
-    <?php get_child_pages(); ?>
+    
     
 </div><!-- END CONTENT -->
 
