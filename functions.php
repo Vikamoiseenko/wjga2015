@@ -60,8 +60,20 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
-    
-    	/* Register the 'blog' sidebar. */
+	
+		/* Register the 'tertiary' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'gallery',
+			'name' => __( 'Gallery Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
+	/* Register the 'events' sidebar. */
 	register_sidebar(
 		array(
 			'id' => 'blog',
@@ -85,9 +97,8 @@ function my_register_sidebars() {
 		)
 	);
 		/* Repeat register_sidebar() code for additional sidebars. */
+
 }
-
-
 //create page excerpts
 add_post_type_support('page', 'excerpt');
 //
