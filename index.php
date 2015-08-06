@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   
-
+<div id="main">
 <!-- START CONTENT -->
 <div id="content" class="index">
 <?php if (have_posts()) : ?>
@@ -25,11 +25,12 @@
 <?php endif; ?>
 </div><!-- END CONTENT -->
 
-<!-- START BLOG SIDEBAR -->
-<?php get_sidebar('blog'); ?>
 
 <!-- START SECONDARY SIDEBAR -->
 <?php get_sidebar('secondary'); ?>
+</div><!--END DIV MAIN-->
 
-<small>index.php</small>
+<!-- START BLOG SIDEBAR -->
+<?php get_sidebar('blog'); ?>
+
 <?php get_footer(); ?>
