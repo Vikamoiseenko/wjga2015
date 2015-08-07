@@ -348,29 +348,43 @@ div#news a.read-more{
 #header-conteiner{
 	background-color:#143020;
 	border:#647D62;
-	height:185px;
+	/*height:185px;*/
 }
 #header{
 	max-width: 980px;
 	margin-top:5px;
 	margin-bottom: 15px;
+	padding: 10px;
 	margin: 0 auto;
-	clear:both;	
+	height:185px;
+	/*clear:both;*/
+	position:relative;	
+	box-sizing: border-box;
 	/*height: 13em;*/
 }
+#logo {
+	position:absolute;
+	z-index: 10;
+	}
+	
 #utilities-header{
 	clear:both;
 	/*background-color:#143020;*/
-	max-width: 980px;
+	/*max-width: 980px;*/
 	margin-top:5px;
 	margin-bottom: 15px;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	margin: 0 auto;
-	height: 97px;
-	border-bottom:1px solid #647D62;
+	/*height: 97px;*/
 	}
-
+#social-header{
+	float:right;
+}
+#search {
+	clear:both;
+	float:right;
+}
 #utilities-footer{
 	clear:both;
 	background-color:#143020;
@@ -598,7 +612,6 @@ article.box-left {
 .box-long h3, .box-long p {
 	text-align: center;
 	}
-
 /* TABLE STYLES */
 
 .wj-table{
@@ -619,22 +632,78 @@ article.box-left {
 	
 /* provide some minimal visual accomodation for IE8 and below */
 .wj-table tr{
-		background: #B8EE90;
+		background: #C9C9C9;
 	}
 	
 /*  Define the background color for all the ODD background rows  */	
 .wj-table tr:nth-child(odd){ 
-		background: #BAEE90;
+		background: #C9C9C9;
 	}
 	
 /*  Define the background color for all the EVEN background rows  */
 .wj-table tr:nth-child(even){
-		background: #CCEE90;
+		background: #DBDBDB;
 	}
-/* end table style */
+
+div.center p{
+    text-align: center;
+    margin: 5px auto 5px auto;
+    text-decoration: none;
+}
+
+div.center {
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 1em;
+}
+
+div.center h4 {
+    color: darkgreen;
+    padding-top: 1em;
+}
+
+.center ul, .center li{
+    margin:0;
+    padding:0 0 0 15px;
+    list-style-type: none;
+}
+
+/* END TABLE STYLES */
 
 /* FORM STYLES */
 
+textarea, input, select {
+	margin-bottom:6px;
+}
+
+input[type=text], input[type=email] {
+  display: block;
+  width: 70%;
+  font-size: 1em;
+}
+
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"]
+{
+    width:70%;
+	margin-bottom:1.25em;/* 20px/16px */
+	margin-top:.25em;
+	height:1.1em;/* 22px/16px */
+	font-size:1em;
+}
+
+.wpcf7 textarea {
+	margin-top:.25em;
+	width:30em;
+	
+}
+
+input[type=submit] {
+padding:5px 0.3125em 5px 0.3125em;	
+}
+
+/* END FORM STYLES */
 textarea, input, select {
 	margin-bottom:6px;
 }
@@ -826,7 +895,11 @@ img.attachment-post-thumbnail {
 
 }
 /* Navigation Menu goes Here */
-
+#navigation{
+	background-color:#22050E;
+	border: #647D62;
+	clear:both;
+}
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 #cssmenu,
 #cssmenu ul,
@@ -844,7 +917,6 @@ img.attachment-post-thumbnail {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
     z-index:50;
-
 }
 
 #cssmenu:after,
@@ -860,21 +932,21 @@ img.attachment-post-thumbnail {
   display: none;
 }
 #cssmenu {
-  width: auto;
 	font-family: 'Raleway', sans-serif;
   line-height: 1;
-  background-color: #22050E;
-  border: #647D62;
-  padding:10px;
-  float:right;
+  /*background-color: #22050E;
+  border: #647D62;*/
+  /*padding:10px;*/
+  max-width: 860px;
+  margin: 0px 2px 0px auto;
   
 }
 #menu-line {
-  position: absolute;
+ position: absolute;
   top: 0;
   left: 0;
   height: 3px;
-  background: #009ae1;
+  background: #dad8d6;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -ms-transition: all 0.25s ease-out;
@@ -902,11 +974,15 @@ img.attachment-post-thumbnail {
   text-align: right;
 }
 #cssmenu > ul > li > a {
-  padding: 20px;
+  /*padding: 20px;*/
+  padding-right:20px;
+  padding-top:10px;
   /*font-size: 16px;*/
-  font-size: 1.34em;
+  font-size: 1em;
   font-weight:500;
-  margin:0 13px;
+  line-height:2.63em;
+  border-bottom:thin #22050E;
+  /*margin:0 13px;*/
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -922,7 +998,7 @@ img.attachment-post-thumbnail {
   color: #009ae1;
 }
 #cssmenu > ul > li.has-sub > a {
-  padding-right: 25px;
+  /*padding-right: 25px;*/
 }
 #cssmenu > ul > li.has-sub > a::after {
   position: absolute;
@@ -945,7 +1021,7 @@ img.attachment-post-thumbnail {
   transition: border-color 0.2s ease;
 }
 #cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #009ae1;
+  border-color: #547D62;
 }
 #cssmenu ul ul {
   position: absolute;
@@ -977,12 +1053,13 @@ img.attachment-post-thumbnail {
   height: 32px;
 }
 #cssmenu ul ul li a {
-  padding: 10px 20px;
+  padding: 10px 10px;
   width: 160px;
-  font-size: 12px;
-  background: #333333;
+  font-size: 1em;
+  background-color: #143020;
   text-decoration: none;
-  color: #dddddd;
+  border:#547D62;
+  color: #aaaaaa;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -991,7 +1068,7 @@ img.attachment-post-thumbnail {
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
+  color: #aaaaaa;
 }
 #cssmenu ul ul li.has-sub > a::after {
   position: absolute;
@@ -999,8 +1076,8 @@ img.attachment-post-thumbnail {
   right: 10px;
   width: 4px;
   height: 4px;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
   content: "";
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -1084,7 +1161,7 @@ img.attachment-post-thumbnail {
   #cssmenu #menu-button {
     display: block;
     padding: 20px;
-    color: #000000;
+    color: #ffffff;
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
@@ -1107,8 +1184,8 @@ img.attachment-post-thumbnail {
     display: block;
     width: 15px;
     height: 3px;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
   }
   #cssmenu .submenu-button {
     position: absolute;
@@ -1250,8 +1327,8 @@ ul .sub-menu{
 @media screen and (max-width: 1200px) {
     /* Styles */
     #logo a img{
-	float:left;
-	width: 10%;
+	/*float:left;*/
+	width: 100%;
 }
 
 #widgets section.widgets-item{
