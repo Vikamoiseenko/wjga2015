@@ -85,7 +85,17 @@ function my_register_sidebars() {
 		)
 	);
 
-
+	/* Register the 'events' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'blog',
+			'name' => __( 'Blog Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
 	/* Register the 'tertiary' sidebar. */
 	register_sidebar(
 		array(
@@ -182,7 +192,7 @@ function add_flexslider() {
 		if (is_page('Home')) { // use full size image with blockquote for home page
 			
         	echo $theImage;
-			echo '<blockquote class="home">Lorem ipsum dolor sit amet, error mundi te duo. Ad justo elitr suscipit usu, brute mnesarchum ex eum, te his summo affert consequuntur. &nbsp;</blockquote>';
+			echo '<blockquote class="home">'.$theBlockquote. '&nbsp;</blockquote>';
 			echo '<a href="'.$theLink.'"><button class="home">Find out more&nbsp;&raquo;</button></a>';
 			
 		}

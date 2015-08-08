@@ -94,26 +94,29 @@ div.flexslider blockquote.home {
 	text-align: left;
 	color: #FFF;
 	text-shadow: 2px 2px #000;
-	max-width: 380px;
+	max-width: 420px;
 	z-index: 3;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
-	font-size: 1em;
-	line-height: 150%;
+	font-family: 'Raleway', 'Helvetica', sans-serif;
+	font-size: 1.338em;
+	background-color:#435442;
+	border-radius: 10px;
+	line-height: 160%;
 	padding: 4px 10px;
 	}	
 div.flexslider button.home {
 	position: absolute;
-	bottom: 20px;
+	bottom: 50px;
 	right: 60px;
 	text-align: left;
 	max-width: 450px;
 	z-index: 3;
-	font-family: Myriad Pro, Arial, Helvetica, sans-serif;
-	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
 	line-height: 150%;
 	padding: 4px 10px;
-	background-color: #aad9f5;
+	background-color: #143020;
 	border: 0;
+	color:#dbd9d6;
 	}
 	
 	div.flexslider a button  {

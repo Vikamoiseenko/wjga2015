@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link href="<?php bloginfo('template_directory'); ?>/flexslider.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!-- end style -->
 
 <!-- Begin Scripts -->
@@ -37,34 +38,42 @@
 <body <?php body_class(); ?>>
 
 <!-- Begin HEADER -->
+<div id="header-conteiner">
+<div id="header">
+<!-- begin logo -->
+<div id="logo">
+<a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
+<img src="<?php bloginfo('template_directory'); ?>/images/wjga-logo.png" />
+</a>
+</div><!-- end logo -->
 <!-- Begin Utility Menu -->
-<div id="utilities">
+<div id="utilities-header">
 <!-- Begin Social  Icon-->
-<div id="social">
+<div id="social-header">
+<i class="fa fa-envelope-o fa-2x"></i>
 <i class="fa fa-facebook-square fa-2x"></i>
 <i class="fa fa-twitter-square fa-2x"></i>
 <i class="fa fa-youtube fa-2x"></i>
 <i class="fa fa-instagram fa-2x"></i>
 </div> <!-- end social icon -->
-<!-- begin search form -->
-<div id="search">
-<form method="get" id="searchform" class="searchform" action="<?php bloginfo('home'); ?>/">
-<div class="search"><input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
-<input type="submit" name="submit" id="searchsubmit" value="Search" />
-</div>
-</form> <!-- end search form -->
-</div>
+<!--<div id="link2">
+<ul>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>-->
 </div> <!-- end utiliti menu -->
 
-<div id="header">
-<!-- begin logo -->
-<div id="logo">
-<a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
-<img src="<?php bloginfo('template_directory'); ?>/images/logo.gif" />
-</a>
-</div><!-- end logo -->
+<!-- begin search form -->
+<div id="search">
+<form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
+<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="submit" />
+</form> <!-- end search form -->
+</div>
+</div> <!-- end header container -->
 
 <!-- Begin new Navigation -->
+<div id="navigation">
 <?php  wp_nav_menu( array(
     'theme_location' => 'main-menu', // Setting up the location for the main-menu, Main Navigation.
     'menu_class' => 'dropdown', //Adding the class for dropdowns
@@ -73,6 +82,7 @@
     )
       );
 ?>
+</div>
 <!--</div>
 <!-- end Navigation -->
 
