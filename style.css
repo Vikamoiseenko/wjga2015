@@ -127,7 +127,7 @@ h1 strong {
 	letter-spacing:0.1875em;/*3px / 16px*/
 }
 
-#secondary h3, #primary h3  {
+#secondary h3, #primary h3, #events h3, #blog h3  {
  	font-family:Arial, sans-serif;
     font-size:1em;
     font-weight: bold;
@@ -135,7 +135,7 @@ h1 strong {
 	text-align:left;
 }
 
-#secondary h2, #primary h2  {
+#secondary h2, #primary h2, #events h2, #blog h2  {
 	border-bottom:2px solid #CACACA;
     font-family:Arial, sans-serif;
     font-size:1.215em;
@@ -144,11 +144,10 @@ h1 strong {
 	padding-bottom:.25em;
 }
 
-#secondary p, #primary p {
+#secondary p, #primary p, #events p, #blog p {
 	margin-bottom: 1.3em;
 	text-align: left;
 }
-
 
 
 
@@ -298,11 +297,23 @@ div#news a.read-more{
 	color:#AE1416;
 }
 
-
+/* SIDEBAR STYLES */
 #secondary {
 	float:right;
 	width:29.72972972972973%;/*220px / 740*/
 	font-size:1.1em;
+}
+
+#ai1ec_agenda_widget-4 {
+ padding-bottom:25px; 
+}
+
+.textwidget {	
+	padding:7px;
+}
+
+.textwidget form{
+     padding: 17px;
 }
 
 #blog {
@@ -1319,7 +1330,76 @@ ul .sub-menu{
 	margin: 0px auto;
 
 }
+/* COMMENTS */
 
+#comments-head {
+	border-bottom: 1px solid #ddd;
+}
+
+#comments-box ol,
+#comments-box ul {
+	list-style-type:none;
+	padding-left: 0;
+	margin-left: 0;	
+}
+	
+#comments-box ol li {
+	margin: 10px 0;
+}
+
+#comments-box cite {
+	font-weight:bold;
+	font-size: 13px;
+
+}
+	
+.comment-author {
+    font-size: 1.2em;
+	margin-bottom: 2px;
+
+}
+	
+.comment p {
+	clear:both; 
+}
+
+.reply {
+	font-size:14px;
+}
+	
+.comment-meta {
+	font-size:14px;
+}
+	
+.avatar {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+	
+#content img.print {
+	float: right;
+	border: none;
+	clear:both;
+	margin-bottom: 20px;  
+}
+		
+#content object { 
+	margin: 0 0 10px 0px ; 
+    
+}
+	
+#content pre {
+	max-height: 300px;
+	font-size: 12px;
+	padding: 10px;
+	margin: 10px 0px;
+	overflow: auto;
+}
+	
+.clear {
+	clear:both;
+}
+	/*END COMMENT STYLES*/
 
 /* MEDIA STYLES */
 

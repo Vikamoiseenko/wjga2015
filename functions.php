@@ -73,7 +73,7 @@ function my_register_sidebars() {
 		)
 	);
 	
-		/* Register the 'tertiary' sidebar. */
+		/* Register the 'Gallery' sidebar. */
 	register_sidebar(
 		array(
 			'id' => 'gallery',
@@ -85,18 +85,7 @@ function my_register_sidebars() {
 		)
 	);
 
-	/* Register the 'events' sidebar. */
-	register_sidebar(
-		array(
-			'id' => 'blog',
-			'name' => __( 'Blog Sidebar' ),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		)
-	);
-    
+
 	/* Register the 'tertiary' sidebar. */
 	register_sidebar(
 		array(
