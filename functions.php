@@ -161,8 +161,12 @@ function get_child_pages() {
 		$childExcerpt = $post->post_excerpt; // post excerpt
         
 		echo '<article id="page-excerpt-'.$childID.'" class="box-left">';
-		echo '<button id="button"><a href="'.$childPermalink.'">'.$childTitle.' &raquo;</a></button>';
-		echo '<p id>'.$childExcerpt.' <a href="'.$childPermalink.'"> Read More&nbsp;&raquo;</a></p>';
+		echo '<div class="section-box">';
+		echo '<p id="button"><a href="'.$childPermalink.'">'.$childTitle.'</a></p>';
+		echo '</div>';
+		echo '<div class="section-boxes">';
+		echo '<p id>'.$childExcerpt.' <a href="'.$childPermalink.'">'; ?> <i class="fa fa-arrow-circle-right"></i> <?php '</a></p>';
+		echo '</div>';
 		echo '</article>';
         
 	endwhile;
