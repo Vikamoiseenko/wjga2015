@@ -27,6 +27,7 @@
             <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
 		</nav>
 <?php endif; ?>
+<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 </div><!-- END CONTENT -->
 
 
