@@ -18,10 +18,10 @@
 
 <!-- Begin Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+<<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/scripts.js"></script>
+<!--<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>-->
 <!-- End Scripts -->
 
 <!-- Begin Flex Slider -->
@@ -43,7 +43,7 @@
 <!-- begin logo -->
 <div id="logo">
 <a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
-<img src="<?php bloginfo('template_directory'); ?>/images/wjga-logo.png" />
+<img id="mainLogo" src="<?php bloginfo('template_directory'); ?>/images/wjga-logo.png" />
 </a>
 </div><!-- end logo -->
 <!-- Begin Utility Menu -->
@@ -67,7 +67,7 @@
 <div id="search">
 <form method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>/">
 <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
-<input type="submit" id="searchsubmit" value="submit" />
+<input type="submit" id="searchsubmit" value="Search" />
 </form> <!-- end search form -->
 </div>
 </div> <!-- end header container -->

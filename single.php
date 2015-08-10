@@ -1,9 +1,6 @@
 
 <?php get_header(); ?>
-   
-    <!-- START PRIMARY SIDEBAR -->
-<?php get_sidebar('primary'); ?>
-    
+      <div id="main">
 <!-- START CONTENT -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div id="content" class="single">
@@ -30,8 +27,14 @@
 </div>
 <!-- END CONTENT -->
 
+
 <!-- SECONDARY SIDEBAR -->
 <?php get_sidebar('secondary'); ?>
+          </div> <!-- END DIV MAIN -->
+
+
+<!-- START BLOG SIDEBAR -->
+<?php get_sidebar('blog'); ?>
 
 <!-- FOOTER -->
 <?php get_footer(); ?>
