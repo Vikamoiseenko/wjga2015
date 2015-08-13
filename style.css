@@ -137,12 +137,12 @@ h1 strong {
 }
 
 #secondary h2, #primary h2, #events h2, #blog h2  {
-	border-bottom:2px solid #CACACA;
-    font-family:Arial, sans-serif;
-    font-size:1.215em;
-    font-weight: bold;
+	 border-bottom: 2px solid #cacaca;
+    font-family: raleway,helvetica,sans-serif;
+    font-size: 1.215em;
+    font-weight: normal;
+    padding-bottom: 0.25em;
     text-transform: uppercase;
-	padding-bottom:.25em;
 }
 
 #secondary p, #primary p, #events p, #blog p {
@@ -322,30 +322,33 @@ article #news-item .news-item p{
 	font-style:italic;
 }
 div.im-news img.attachment-post-thumbnail.wp-post-image {
-	display: block;
+	/*display: block;
     height: 120px;
     margin: 10px auto;
-    width: auto;
+    width: auto;*/
 }
  div#news p.read-more-1 {
-	 clear:both;
-	font-style: italic;
-	text-align:center;
-	border: none;
-	box-shadow: 1px 1px 18px #000000;
-	margin: 0px auto;
-	width: 240px;
-	padding:10px;
-	border-radius: 10px;
-	background-color:#143020;
-	color:#dbd9d6;
+	 background-color: #7f8d3c;
+    border: medium none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px #666;
+    box-sizing: border-box;
+    clear: both;
+    color: #dbd9d6;
+    margin: 0 auto 1em;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 240px;
  } 
 div#news a.read-more-1{
 	text-align:center;
 	text-decoration:underline;
 	color:#AE1416;
 }
-
+div#news .read-more-1 a{
+color:#FFFFFF;
+}
 /* SIDEBAR STYLES */
 #secondary {
 	float:right;
@@ -387,7 +390,7 @@ article#single-item.single{
 
 
 #calendar {
-	 clear: both;
+	clear: both;
     float: right;
     margin-right: 12px;
     margin-top: -874px;
@@ -1296,7 +1299,7 @@ img.attachment-post-thumbnail {
   box-sizing: border-box;
    z-index:50;
 line-height:2;
-	/*height: 40px;*/
+/*height: 40px;*/
 }
 #menu-main{
 	margin-left: 150px;
@@ -1440,7 +1443,6 @@ line-height:2;
   height: 32px;
 }
 #cssmenu ul ul li a {
-<<<<<<< HEAD
   padding: 5px;
   margin: 0px auto;
   width: 150px;
@@ -1492,6 +1494,7 @@ line-height:2;
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
+	line-height:0px;
   }
   #menu-main{
 	margin-left: 0px;
@@ -1712,8 +1715,7 @@ ul .sub-menu{
 	margin: 0px auto;
 
 }
-/* COMMENTS */
-
+/* COMMENTS */	
 #comments-head {
 	border-bottom: 1px solid #ddd;
 }
