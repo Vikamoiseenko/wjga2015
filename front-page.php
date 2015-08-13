@@ -71,10 +71,14 @@ echo '<button id="button"><a href="'.$page_link.'">Points&nbsp;&raquo;</a></butt
 <div class="author">Authored by <?php the_author(); //get author name ?>| <?php the_category(', ') ?></div>
 </div><!-- end headline div -->
 </div><!-- end info div -->
-<?php if ( has_post_thumbnail($page->ID, 'thumbnail' ) ) {// check if the post has a Post Thumbnail assigned to it.
+<div class="im-news">
+<?php if ( has_post_thumbnail($page->ID, 'thumbnail' ) ); {// check if the post has a Post Thumbnail assigned to it.
 the_post_thumbnail();
  } ?>
+ </div>
+ <div class="text-content">
 <?php the_content(); ?>
+</div>
 </article>
 <?php endwhile; ?>
 <?php endif; ?>
@@ -84,7 +88,7 @@ the_post_thumbnail();
 <div id="calendar">
 	<?php get_sidebar('tertiary'); ?>
 </div>
-<p class="read-more"><a href="/blog-2">More News &raquo;</a></p>
+<p class="read-more-1"><a href="/blog-2">More News &raquo;</a></p>
 </div>
 </div> <!-- end middle -->
 
