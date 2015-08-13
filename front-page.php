@@ -72,12 +72,12 @@ echo '<button id="button"><a href="'.$page_link.'">Points&nbsp;&raquo;</a></butt
 </div><!-- end headline div -->
 </div><!-- end info div -->
 <div class="im-news">
-<?php if ( has_post_thumbnail($page->ID, 'thumbnail' ) ); {// check if the post has a Post Thumbnail assigned to it.
-the_post_thumbnail();
- } ?>
+<?php if ( has_post_thumbnail($page->ID, 'feed') ) {
+	the_post_thumbnail();
+} ?>
  </div>
  <div class="text-content">
-<?php the_content(); ?>
+<?php the_excerpt(); ?>
 </div>
 </article>
 <?php endwhile; ?>
