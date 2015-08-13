@@ -674,6 +674,14 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 	color:#FFFFFF;
 	margin-bottom: 10px;
 }
+/*PAYPAL BUTTON STYLE*/
+
+.paypal-donations input[type|="image"]{
+  display:block;
+  margin: 5px auto;
+}
+/*END PAYPAL BUTTON STYLE*/
+
 /* BOX STYLES */
 .section-box {
 	border:none;
