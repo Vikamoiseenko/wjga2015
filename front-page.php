@@ -3,7 +3,7 @@
 <?php add_flexslider(); ?>
 <div id="widgets">
 <section class="widgets-item">
-<a href="" title="">
+<a href="/membership" title="Learn more about membership">
 <i class="fa fa-user fa-5x"></i>
 </a>
 <h3>Become a Member</h3>
@@ -14,12 +14,12 @@ $page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
 echo apply_filters( 'the_content', $page_data->post_excerpt );
-echo '<button id="button"><a href="'.$page_link.'">Join Now&nbsp;&raquo;</a></button>'
+echo '<a href="'.$page_link.'" class="button">Join Now&nbsp;&raquo;</a>'
 ?>
 </section>
 
 <section class="widgets-item">
-<a href="" title="">
+<a href="/tournaments" title="Learn more about tournament">
 <i class="fa  fa-calendar fa-5x"></i>
 </a>
 <h3>Find a Tournament</h3>
@@ -30,23 +30,23 @@ $page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
 echo apply_filters( 'the_content', $page_data->post_excerpt );
-echo '<button id="button"><a href="'.$page_link.'">Schedule&nbsp;&raquo;</a></button>'
+echo '<a href="'.$page_link.'" class="button">Schedule&nbsp;&raquo;</a>'
 ?>
 </section>
 
 <section class="widgets-item">
-<a href="" title="">
+<a href="/points" title="Learn more about points">
 <i class="fa fa-trophy fa-5x"></i>
 </a>
-<h3>Become a Member</h3>
+<h3>Where do you stand?</h3>
 <?php
-$page_id = 186;
+$page_id = 98;
 $page_data = get_page ( $page_id );
 $page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
 echo apply_filters( 'the_content', $page_data->post_excerpt );
-echo '<button id="button"><a href="'.$page_link.'">Points&nbsp;&raquo;</a></button>'
+echo '<a href="'.$page_link.'" class="button">Points&nbsp;&raquo;</a>';
 ?>
 </section>
 </div>
@@ -67,17 +67,18 @@ echo '<button id="button"><a href="'.$page_link.'">Points&nbsp;&raquo;</a></butt
 <div class="data"><?php the_time('j') ?></div>
 </div><!-- end date div -->
 <div class="headline">
-<div class="head-title"><?php the_title(); ?></div>
+<div class="head-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></div>
 <div class="author">Authored by <?php the_author(); //get author name ?>| <?php the_category(', ') ?></div>
 </div><!-- end headline div -->
 </div><!-- end info div -->
 <div class="im-news">
-<?php if ( has_post_thumbnail($page->ID, 'feed') ) {
-	the_post_thumbnail();
-} ?>
+<?php /* if ( has_post_thumbnail($page->ID, 'feed') ) {
+	the_post_thumbnail($page->ID, 'feed');
+} */ ?>
+<?php echo get_the_post_thumbnail($page->ID, 'feed-center'); ?>
  </div>
  <div class="text-content">
-<?php the_excerpt(); ?>
+<p class="post-excerpt"><?php echo substr(get_the_excerpt(), 0,150); // get page or posting written excerpt with a character count ?>... <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More</a></p>  
 </div>
 </article>
 <?php endwhile; ?>

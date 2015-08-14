@@ -226,8 +226,8 @@ function add_flexslider() {
 add_theme_support('post-thumbnails');
 //
 
-add_image_size( 'feed-center', 300, 150, array (left, center) ); // 300 pixels wide by 150 pixels tall, hard left center crop mode
-add_image_size( 'feed', 300, 150, true ); // 300 pixels wide by 150 pixels tall, soft proportional crop mode
+add_image_size( 'feed-center', 300, 150, array (left, top) ); // 300 pixels wide by 150 pixels tall, hard left center crop mode
+add_image_size( 'feed', 300, 150, false ); // 300 pixels wide by 150 pixels tall, soft proportional crop mode
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 function my_custom_sizes( $sizes ) {

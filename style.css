@@ -54,7 +54,10 @@ a:link,
 a:visited {
 	color: #647D62 ;
 	}
-		
+ div.headline div.head-title a	{
+	 color: #dbd9d6;
+ }
+ 
 a:hover, 
 a:focus {
 	color: #647D62;
@@ -186,6 +189,9 @@ h1 strong {
 	font-size: 2.0075 em;
 	height:39px;
 }
+ div#main div#content.page h2{
+	 background-color:#22050E;
+ }
 #content h2.single{
 	color:#647d62;
 }
@@ -202,7 +208,7 @@ div#main div#content.index article#blogs-item.blogs {
 	clear:both;
 }
 #latest {
-	width: 99%;
+	width: 100%;
 	margin-bottom:0px;
 	background-color: #23060f;
 	border:none;
@@ -213,7 +219,7 @@ div#main div#content.index article#blogs-item.blogs {
 	text-align:left;
 	color:#dbd9d6;
 	font-size:24pt;
-	width:99%;
+	width:100%;
 	margin-top:1em;
 }
 .text-content{
@@ -232,17 +238,17 @@ div.news-widgets {
 }
  div#news div.news-widgets article.news-item {
 	-moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-bottom: 1px solid #ccc;
-    border-image: none;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    float: left;
-    height: 400px;
-    margin: 0 6px 10px 0;
-    width: 48.7%;
+   -moz-border-left-colors: none;
+   -moz-border-right-colors: none;
+   -moz-border-top-colors: none;
+   border-bottom: 1px solid #ccc;
+   border-image: none;
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+   float: left;
+   height: 360px;
+   margin: 0 0 10px 0;
+   max-width: 300px;
 	}
 div#news div.news-widgets article.news-item h2{
 	/*font-size: 9px;*/
@@ -360,9 +366,19 @@ color:#FFFFFF;
 }
 
 .textwidget {	
+<<<<<<< HEAD
 	padding:7px;
 }
 
+=======
+	 text-align: center;
+   padding: 5px 5px 0;
+}
+.paypal-donations {
+   text-align: center;
+   margin: 0 auto;
+}
+>>>>>>> Victoria
 .textwidget form{
      padding: 17px;
 }
@@ -393,9 +409,25 @@ article#single-item.single{
 	clear: both;
     float: right;
     margin-right: 12px;
-    margin-top: -874px;
+    margin-top: -794px;
     overflow: hidden;
     width: 32.2%;
+}
+.event-main-content {
+   float: right !important;
+   width: 75% !important;
+   /* min-height: 42px; */
+   min-height: 72px !important;
+   height: 100% !important;
+  box-sizing: border-box !important; 
+   moz-box-sizing: border-box !important;
+webkit-box-sizing: border-box !important;
+}
+li.ecwd-no-image {
+   padding: 0 10px 10px !important;
+   overflow: hidden !important;
+   position: relative !important;
+	
 }
 .ecwd-widget-mini .calendar-head {
 	 height: 45px !important;
@@ -698,24 +730,22 @@ form.search {
 	
 	
 }
-html body.home.page.page-id-9.page-template-default div#widgets section.widgets-item button#button {
-	background-color: #7f8d3c;
+ div#widgets section.widgets-item a.button {	
+ background-color: #7f8d3c;
     border: medium none;
     border-radius: 15px;
     box-shadow: 4px 4px 13px #222;
     display: block;
-    font-family: raleway, helvetica, sans-serif;
+    font-family: 'Raleway', helvetica, sans-serif;
     margin: auto auto 10px;
     padding: 5px 25px 3px;
     width: 180px;
-}
-html body.home.page.page-id-9.page-template-default div#widgets section.widgets-item button#button a{
-	display:block;
 	font-size:18px;
 	padding-top: 2px;
 	color:#f2f2f2;
 	font-weight:800;
 }
+
 #gallery{
 	max-width:66%;
 	float:left;
@@ -1122,6 +1152,9 @@ ul.sub-navigation-items li li{
 div.aligncenter {
     display: block;
     margin: 5px auto 5px auto;
+}
+h2.pagetitle {
+    font-size: 1.45em;
 }
 
 .alignright {
@@ -1719,6 +1752,7 @@ ul .sub-menu{
 #comments-head {
 	border-bottom: 1px solid #ddd;
 }
+<<<<<<< HEAD
 
 #comments-box ol,
 #comments-box ul {
@@ -1741,6 +1775,30 @@ ul .sub-menu{
     font-size: 1.2em;
 	margin-bottom: 2px;
 
+=======
+
+#comments-box ol,
+#comments-box ul {
+	list-style-type:none;
+	padding-left: 0;
+	margin-left: 0;	
+}
+	
+#comments-box ol li {
+	margin: 10px 0;
+}
+
+#comments-box cite {
+	font-weight:bold;
+	font-size: 13px;
+
+}
+	
+.comment-author {
+    font-size: 1.2em;
+	margin-bottom: 2px;
+
+>>>>>>> Victoria
 }
 	
 .comment p {
@@ -1836,7 +1894,7 @@ width:100%;
 	
 }
 #latest {
-	max-width:98%;
+	max-width:100%;
 }
 div.news-widgets {
 	max-width:100%;

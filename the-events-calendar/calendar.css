@@ -229,7 +229,7 @@ table.cal_blue.mini td ul.events li {
 	 margin-bottom: 10px;
 	 margin:0px auto;
 	 background-color:#23060f;
-	 box-shadow: 1px 1px 18px #000000;
+	 /*box-shadow: 1px 1px 18px #000000;*/
 }
 
 
@@ -303,7 +303,7 @@ table.cal_blue.mini td ul.events li {
 .ecwd_list .ecwd-list-date{
 	 color:#DADBD6;
 	 background-color:#23060f;
-	 box-shadow: 1px 1px 18px #000000;
+	/* box-shadow: 1px 1px 18px #000000;*/
 	 
 }
 ul.ecwd_list, ul.week-event-list, ul.day-event-list, ul.day4-event-list{
