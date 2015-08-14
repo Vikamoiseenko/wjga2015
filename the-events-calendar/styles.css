@@ -85,7 +85,7 @@
     color:#262e3a;
     border:none;
     background:#FFFFFF;
-    font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+    font-family: "Raleway",sans-serif;
     font-size:10px;
     table-layout: fixed;
     margin: 0 0 10px 0;
@@ -147,7 +147,7 @@ table.cal_blue.ecwd_calendar_container .day-with-date, table.cal_blue.ecwd_calen
 }
 
 .ecwd_calendar {
-    font-family: Segoe UI !important;
+    font-family: "Raleway",sans-serif;
     max-width: 100%;
     width: 100%;
     float: left;
@@ -428,6 +428,8 @@ div.ecwd-page-full table.cal_blue ul.events > li:last-child {
 }
 .ecwd_calendar.ecwd-widget-mini  div.event-details {
     max-width: 100% !important;
+	padding:2px;
+	background-color: #7f8d3c;
 }
 @media only screen and (max-width: 768px){
     .ecwd-events-day-details{
@@ -445,7 +447,7 @@ div.ecwd-page-full table.cal_blue ul.events > li:last-child {
         height: 8px;
         width: 8px;
         padding: 0;
-        background-color: #10738B;
+        background-color: #7f8d3c;
         margin: 13px auto 0;
     }
     table.cal_blue.ecwd_calendar_container .normal-day-heading, table.cal_blue.ecwd_calendar_container .weekend-heading {
@@ -464,7 +466,8 @@ table.cal_blue.mini {
     width: 100%;
 }
 .ecwd_calendar.ecwd-widget-mini {
-    width: 300px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .ecwd-widget-mini .ecwd-week-date,
@@ -619,7 +622,7 @@ table.cal_blue.mini .previous span, table.cal_blue.mini .next span, .ecwd_calend
 
 .ecwd_calendar .ecwd_calendar_prev_next{
     text-align: center;
-    /*box-shadow: 0px 11px 17px rgba(0,0,0,0.2);*/
+	/* box-shadow: 1px 1px 18px #000000;*/
     z-index: 3;
     position: relative;
 }
@@ -849,37 +852,37 @@ table.cal_blue.ecwd_calendar_container select {
 }
 
 .ecwd-widget-mini .ecwd_calendar_view_dropdown a {
-    color:#585858;
+    color:#dbd9d6;
 }
 .ecwd-widget-mini .ecwd_calendar_view_dropdown span {
     font-size: 13px;
 }
 
 .cal_blue.ecwd_calendar_container .events li > a {
-    color: #585858;
+    color: #dbd9d6;
     font-size: 14px;
     font-style: italic;
     line-height: 17px;
     word-wrap: break-word;
 }
 .event-details-container .event-details-title h5  a {
-    color: #585858;
+    color: #dbd9d6;
     font-size: 17px;
     line-height: 19px;
     font-style: italic;
 }
 .event-main-content h3 a {
-    color: #585858;
+    color: #dbd9d6;
     font-size: 17px;
     line-height: 19px;
     font-style: italic;
 }
 .site-footer .widget h3.event-title a, h3.event-title a {
-    color: #585858;
+    color: #dbd9d6;
 }
 .event-main-content  a:hover,  .event-details-container  a:hover{
     text-decoration: underline !important;
-    color: #585858  ;
+    color: #dbd9d6  ;
 }
 
 .cal_blue.calendar .events>li>a> span {
@@ -1035,6 +1038,7 @@ table.cal_blue.ecwd_calendar_container select {
 }
 .ecwd-widget-mini .calendar-head{
     height: 45px;
+	margin-bottom:5px;
 }
 
 
@@ -1068,7 +1072,7 @@ table.cal_blue.ecwd_calendar_container select {
 }
 
 .ecwd-widget-mini  .calendar-head .current-month{
-    font-size:16px;
+    font-size:1.5em;
     border-left:0px;
     border-right:0px;
 }
@@ -1337,7 +1341,7 @@ div[class^="ecwd-page-"].ecwd_calendar  .ecwd-week-date.resp{
 .day4-event-list .ecwd-week-date,
 .week-event-list .ecwd-week-date{
     text-align: left;
-    color:#fff;
+	color:#DADBD6;
     padding-left: 5%;
     font-size: 15px;
     font-style: italic;
@@ -1345,7 +1349,7 @@ div[class^="ecwd-page-"].ecwd_calendar  .ecwd-week-date.resp{
 
 .ecwd_list .ecwd-list-date{
     text-align: center;
-    color:#fff;
+	color:#DADBD6;
     font-size: 15px;
     font-style: italic;
 }
@@ -1397,7 +1401,7 @@ div[class^="ecwd-page-"].ecwd_calendar  .ecwd-week-date.resp{
 .ecwd_calendar.ecwd-widget-mini .event-content,
 .ecwd_calendar.ecwd-widget-mini .ecwd_list li{
     padding:  0 !important;
-    color: #676767;
+    color: #dbd9d6;
 }
 
 /*
@@ -1631,10 +1635,6 @@ div[class^="ecwd-page-"].ecwd_calendar  .ecwd-week-date.resp{
     .event-detalis{
         margin-right:0px;
     }
-	.ecwd_calendar.ecwd-widget-mini {
-    width: 100%;
-}
-
 }
 
 /*####################upcoming events#####################*/
@@ -1773,20 +1773,12 @@ a.ecwd-google-plus{
     .ecwd-poster-board .ecwd-poster-item{
         width: 45%;
     }
-		.ecwd_calendar.ecwd-widget-mini {
-    width: 100%;
-}
-
 }
 @media only screen and (max-width: 460px){
     .ecwd-poster-board .ecwd-poster-item{
         width: 95%;
         margin: 15px 5px 0;
     }
-		.ecwd_calendar.ecwd-widget-mini {
-    width: 100%;
-}
-
 }
 
 
@@ -2287,9 +2279,6 @@ a.ecwd-google-plus{
     line-height: 1.3;
 }
 @media only screen and (max-width: 500px){
-	.ecwd_calendar.ecwd-widget-mini {
-    width: 100%;
-}
 
     .calendar-head .previous, .calendar-head .next {
         font-size: 14px;
