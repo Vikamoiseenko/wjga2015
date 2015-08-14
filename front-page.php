@@ -13,8 +13,11 @@ $page_data = get_page ( $page_id );
 $page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
-echo apply_filters( 'the_content', $page_data->post_excerpt );
-echo '<a href="'.$page_link.'" class="button">Join Now&nbsp;&raquo;</a>'
+?>
+<p>
+<?php echo wp_trim_words($content, 35); ?>
+</p>
+<?php echo '<a href="'.$page_link.'" class="button">Join Now&nbsp;&raquo;</a>'
 ?>
 </section>
 
@@ -29,9 +32,13 @@ $page_data = get_page ( $page_id );
 $page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
-echo apply_filters( 'the_content', $page_data->post_excerpt );
-echo '<a href="'.$page_link.'" class="button">Schedule&nbsp;&raquo;</a>'
 ?>
+<p>
+<?php echo wp_trim_words($content, 35); ?>
+</p>
+<?php echo '<a href="'.$page_link.'" class="button">Schedule&nbsp;&raquo;</a>'; ?>
+<!--apply_filters( 'the_content', $page_data->post_excerpt );
+'<a href="'.$page_link.'" class="button">Schedule&nbsp;&raquo;</a>' -->
 </section>
 
 <section class="widgets-item">
@@ -45,8 +52,11 @@ $page_data = get_page ( $page_id );
 $page_link = get_permalink ($page_id);
 $content = $page_data->post_excerpt;
 $title = $page_data->post_title;
-echo apply_filters( 'the_content', $page_data->post_excerpt );
-echo '<a href="'.$page_link.'" class="button">Points&nbsp;&raquo;</a>';
+?>
+<p>
+<?php echo wp_trim_words($content, 35); ?>
+</p>
+<?php echo '<a href="'.$page_link.'" class="button">Points&nbsp;&raquo;</a>';
 ?>
 </section>
 </div>
