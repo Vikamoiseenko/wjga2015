@@ -106,7 +106,7 @@ h1 span {
 }   
 
 h2 {
-	font-size: 1.953em;
+	font-size: 1.75em;
 }
 
 h3 {
@@ -140,17 +140,20 @@ h1 strong {
 }
 
 #secondary h2, #primary h2, #events h2, #blog h2  {
-	 border-bottom: 2px solid #cacaca;
-    font-family: raleway,helvetica,sans-serif;
-    font-size: 1.215em;
-    font-weight: normal;
-    padding-bottom: 0.25em;
-    text-transform: uppercase;
+	background-color: #143020;
+    color: #ffffff;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.875em;
+    margin: 0 auto;
+    text-transform: capitalize;
+	text-align:center;
 }
 
 #secondary p, #primary p, #events p, #blog p {
-	margin-bottom: 1.3em;
-	/*text-align: left;*/
+	margin-bottom: 1em;
+	text-align:center;
 }
 
 /* END HEADINGS */
@@ -167,7 +170,6 @@ h1 strong {
 #main {
 	float:right;
 	width:78.72340425531915%;/*740px / 940px */
-	border-left:3px solid #CACACA;
 	overflow:hidden;
 	margin-bottom:2em;
 	margin-top:10px;
@@ -297,20 +299,25 @@ body.home.page.page-id-9.page-template-default.logged-in.admin-bar.customize-sup
     padding-top: 0;
 
 }
+
+.headline {
+    padding-left:0em;	
+}
 .head-title {
 	font-size: 1.313em; /*21px*/
 	color: #dbd9d6;
- padding: 0.5em 0 0.1em 2.5em;
+    padding: 0.5em 0 0.1em 2.5em;
 }
 .heads-title {
 	font-size: 1.313em; /*21px*/
 	color: #dbd9d6;
+	padding-top: 12px;
 }
 .author{
 	font-size:0.750em; /*12px*/
 	font-style:italic;
 	color: #dbd9d6;
-	padding:0 4.5em;
+	padding-top: 3px;/*padding:0 4.5em;*/
 
 }
 .author a{
@@ -400,7 +407,6 @@ article#single-item.single{
 	/*max-width: 298px;*/
 	border:none;
 	margin: 0 6px 10px 0;
-	box-shadow: 1px 1px 18px #000000;
 	background-color:#7f8d3c;
 	}
 
@@ -436,22 +442,21 @@ li.ecwd-no-image {
  div#tertiary {
 	margin-bottom: 20px;
 }
- h3.widget-title{
-	 font-size: 1.5em;
-	 line-height:2.25em;
-	 text-transform:capitalize;
-	 color:#ffffff;
-	 margin-bottom: 10px;
-	 margin:0px auto;
-	 background-color:#143020;
-	font-family: 'Raleway', sans-serif;
-	font-weight:500;
-	 
- }
+ h3.widget-title {
+    background-color: #143020;
+    color: #ffffff;
+    font-family: "Raleway",sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.875em;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
  .widget.widget_categories ul, .widget.widget_archive ul{
 	 list-style:none;
-	 margin-left: 5px;
+	 margin: 8px;
 	 line-height: 1.5em;
+	 padding-bottom:8px;
  }
  ol.hfeed.vcalendar {
 	 margin: 10px;
@@ -462,14 +467,14 @@ li.ecwd-no-image {
 	 text-decoration: underline;
  }
 #primary {
-	float:left;
-	width:19.14893617021277%;/*180px / 940px */
-	font-size:1.1em;
-	margin-top:10px;
-	padding:5px;
-	box-shadow: 3px 3px 5px #666666;
-	padding-top:10px;
-	}
+    box-shadow: 3px 3px 5px #ddd;
+    float: left;
+    font-size: 1.1em;
+    margin-top: 10px;
+    width: 19.1489%;
+	background-color: #fff;
+	min-height:740px;
+}
 div.timely.ai1ec-agenda-widget-view.ai1ec-clearfix div div.ai1ec-date a.ai1ec-date-title.ai1ec-load-view div.ai1ec-month{
 	background:#143020;
 	font-size:1em;
@@ -538,7 +543,7 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
 	max-width: 980px;
 	position:relative;
 	margin:0px auto;
-	height:185px;
+	height:135px;
 }
 #logo {
 	/*position:absolute;
@@ -572,7 +577,7 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
 	margin-left: 10px;
 }
 #social-header .fa-2x{
-	font-size:2.25em;
+	font-size:2em;
 	color:#FFFFFF;
 }
 
@@ -686,7 +691,8 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
     font-size: 14px;
     line-height: 1em;
     border-radius: 10px;
-    box-shadow: 1px 1px 18px #000;  
+    box-shadow: 1px 1px 18px #000;
+	border:none;  
 }
 /*.read-more{
 	position:relative;
@@ -743,7 +749,6 @@ form.search {
 	font-size:18px;
 	padding-top: 2px;
 	color:#f2f2f2;
-	font-weight:800;
 }
 
 #gallery{
@@ -751,6 +756,15 @@ form.search {
 	float:left;
 	overflow:hidden;
 	clear:both;
+}
+
+div.sci-contact {
+    padding:5px;	
+}
+
+div.sci-contact p {
+    margin-bottom: 3px;
+    padding: 2px;
 }
 div.sci-contact p.sci-address-phone{
 	padding-top: 10px;
@@ -761,6 +775,13 @@ div.sci-contact p.sci-address-email{
 	padding-top: 10px;
 	margin-bottom: 10px;
 	text-align: center;
+}
+
+.widget {
+    background-color: #fff;
+    box-shadow: 3px 3px 5px #ddd;
+	margin-bottom: 20px;
+    margin-right: 7px;	
 }
 
 #widgets{
@@ -801,6 +822,7 @@ div.sci-contact p.sci-address-email{
 .paypal-donations input[type|="image"]{
   display:block;
   margin: 5px auto;
+  width:150px;
 }
 /*END PAYPAL BUTTON STYLE*/
 
@@ -1043,26 +1065,32 @@ div.center h4 {
 textarea, input, select {
 	margin-bottom:6px;
 }
+
+div.mailing-list form {
+    padding:10px;	
+}
 div.mailing-list form p label{
 	display: none;
 }
-div.mailing-list form p input#s2email{
-	border: none;
-	background-color:#FFFFFF;
-	width: 200px;
-	border-radius: 0px;
-	color:#EFEBEB;
+
+div.mailing-list form p input#s2email {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #bbb;
+    margin: 0 auto;
+    padding: 2px;
+    width: 200px;
 }
 
 
 div.mailing-list form input{
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color:#7f8d3c;
 	font-size: 1em;
 	line-height: 1.5em;
 	color:#ffffff;
 	border:none;
-	text-transform: uppercase;
 
 }
 input[type=text], input[type=email] {
@@ -1111,14 +1139,15 @@ p, ol, ul, dl {
 }
 
 li {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.45em;
 }
 
 
 #primary ul, #secondary ul {
     list-style-type: none;
 	margin-left:0px;
-		}
+	padding:8px;
+}
 		
 li.indented {
 	padding-left:1.25em;	
@@ -1310,9 +1339,8 @@ img.attachment-post-thumbnail {
 /* Navigation Menu goes Here */
 #navigation{
 	background-color:#22050E;
-	border: #647D62;
 	clear:both;
-	border-top:2px solid #647dg2;
+	border-top: 2px solid #435442;
 }
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 #cssmenu,
@@ -1845,14 +1873,23 @@ ul .sub-menu{
 
 /* MEDIA STYLES */
 
-	/*Desctop screen set to 980px or below*/
+	/*Desktop screen set to 980px or below*/
+@media all and (min-width: 1201px) {
+	#header {
+	    height: 135px;	
+	}
+    #mainLogo {
+    left: 1em;
+    top: .75em;
+	width: 145px;
+}	
+}
 @media screen and (max-width: 1200px) {
     /* Styles */
 #mainLogo{
-	float:left;
 	width: 130px;
-	position:relative;
-	padding-top:0;
+	left:1em;
+	top:1.75em;
 }
 
 #widgets section.widgets-item{
@@ -1875,6 +1912,11 @@ width:100%;
 	}
 }
 
+@media screen and (min-width: 951px){
+    #navigation {
+	    max-height: 35px;	
+	}
+}
 @media screen and (max-width: 950px) {
     /* Styles */
 	body {
@@ -1885,8 +1927,8 @@ width:100%;
 #mainLogo{
 	/*float:left;*/
 	width: 130px;
-	position:relative;
-	padding-top:0;
+	left:1em;
+	top:1.75em;
 }
 
 #widgets section.widgets-item{
@@ -1924,10 +1966,9 @@ body {
         font-size:85%;
 	}
 #mainLogo{
-	/*float:left;*/
-	width: 130px;
+	float:left;
 	position:relative;
-	padding-top:0;
+	margin-left:1em;
 }
 #middle {
 		width: auto;
@@ -2018,12 +2059,15 @@ width:100%;
 	margin-right: 3%;
 }
 
-#mainLogo{
-	/*float:left;*/
-	width: 130px;
-	position:relative;
-	padding-top:0;
+#mainLogo {
+    float: left;
+    left: 0.5em;
+    margin-left: 1em;
+    max-width: 120px;
+    position: absolute;
+    top: 0.25em;
 }
+
  div#news div.news-widgets article.news-item {
 	width: 100%;
 	}
@@ -2084,11 +2128,13 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
     #menu-footer {
 	display: none;
 }
-#mainLogo{
-	/*float:left;*/
-	width: 130px;
-	position:relative;
-	padding-top:0;
+#mainLogo {
+    float: left;
+    left: 0.5em;
+    margin-left: 1em;
+    max-width: 120px;
+    position: absolute;
+    top: 0.25em;
 }
 #widgets section.widgets-item{
 	width: 100%;
@@ -2150,11 +2196,11 @@ width:100%;
     #menu-footer {
 	display: none;
 }
-#mainLogo{
-	/*float:left;*/
-	width: 130px;
-	position:relative;
-	padding-top:0;
+#mainLogo {
+    left: 0.5em;
+    max-width: 120px;
+    position: absolute;
+    top: 0.25em;
 }
 #widgets section.widgets-item{
 	max-width: 100%;
@@ -2297,82 +2343,95 @@ div.im-news img.attachment-post-thumbnail.wp-post-image {
 	}
     
     article.box-left {
-	width:90%;
-	float:none;		
+		width:90%;
+		float:none;		
 	}  
     #menu-footer {
-	display: none;
-}
+	    display: none;
+    }
 
     .box-long {
-	width:90%;
-    float: none;
+	    width:90%;
+        float: none;
 	}
-#mainLogo{
-	float:none;
-	display:block;
-	margin: -1.5em auto 1.5em;
-}
- div#news div.news-widgets article.news-item {
-	width: 100%;
+	
+	#header {
+	    height:165px;	
 	}
-#search input#s {
-    float:left;
-    font-size: 12px;
-    height:20px;
-    margin-right: 10px;
-    margin-top: 2px;
-    width: 90px;
-    margin-left: 5px;
-}
-
-#searchsubmit {
-    border: none;
-}
-
-#search {
-    float: right;
-    position: relative;
-    margin-left: 5px;
-}
-
-#social-header .fa-2x {
-    font-size: 2em;
-   line-height:1.5em;
-}
-#utilities-footer {
-	display: none;
-}
-
-.fa-2x {
-    padding-left:5px;
-}
-
-#utilities-footer {
-	display: none;
-}
-#secondary {
-	float:right;
-	width:100%;
-	padding-top:15px;
-}
-.section-box {
-	width:100%;
-	height: 56px;
+    #mainLogo {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		padding-top: 3em;
+		position: relative;
+		width: 110px;
 	}
-.section-boxes{
-	max-width: 100%;
-	height:auto;
-}
-.widgets-item .fa-5x{
-	font-size:4em;
-}
-#widgets section.widgets-item p{
-	height: 180px;
-}
-div.im-news img.attachment-post-thumbnail.wp-post-image {
-	width: 100%;
-	height:120px;
-}
-
-}
+	 div#news div.news-widgets article.news-item {
+		width: 100%;
+		}
+	#utilities-header {
+		left: 1px;
+		position: absolute;
+		top: 0;
+	}
+	
+	#search input#s {
+		float:left;
+		font-size: 12px;
+		height:20px;
+		margin-right: 10px;
+		margin-top: 2px;
+		width: 100px;
+		margin-left: 5px;
+	}
+	#search {
+	position: absolute;
+		right: 5px;
+		top: 5px;
+	}	
+	
+	#searchsubmit {
+		border: none;
+	}
+	
+	
+	#social-header .fa-2x {
+		font-size: 2em;
+	   line-height:1.5em;
+	}
+	#utilities-footer {
+		display: none;
+	}
+	
+	.fa-2x {
+		padding-left:5px;
+	}
+	
+	#utilities-footer {
+		display: none;
+	}
+	#secondary {
+		float:right;
+		width:100%;
+		padding-top:15px;
+	}
+	.section-box {
+		width:100%;
+		height: 56px;
+		}
+	.section-boxes{
+		max-width: 100%;
+		height:auto;
+	}
+	.widgets-item .fa-5x{
+		font-size:4em;
+	}
+	#widgets section.widgets-item p{
+		height: 180px;
+	}
+	div.im-news img.attachment-post-thumbnail.wp-post-image {
+		width: 100%;
+		height:120px;
+	}
+	
+	}
