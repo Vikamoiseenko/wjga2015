@@ -72,7 +72,7 @@ $title = $page_data->post_title;
 <?php while (have_posts()) : the_post(); ?>
 <article class="news-item" id="news-item-<?php the_ID(); ?>">
 <div class="info">
-<div class="date">
+<div class="dates">
 <div class="month"><?php the_time('M') ?></div>
 <div class="data"><?php the_time('j') ?></div>
 </div><!-- end date div -->
