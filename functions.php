@@ -84,6 +84,18 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
+		/* Register the 'archives' sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'archive',
+			'name' => __( 'Archive Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
 
 	/* Register the 'events' sidebar. */
 	register_sidebar(
@@ -236,5 +248,7 @@ function my_custom_sizes( $sizes ) {
 		'feed' => __( 'feed' ),
     ) );
 }
+
+
 
 ?>

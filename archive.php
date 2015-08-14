@@ -73,6 +73,7 @@ echo $variable;
 <?php get_sidebar( 'secondary' ); ?>
 </div><!-- END MAIN -->
 <?php //get_sidebar( 'archive' ); ?>
+<?php get_sidebar( 'blog' ); ?>
 
 <!-- END SIDEBAR -->
 

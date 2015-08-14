@@ -252,6 +252,10 @@ div.news-widgets {
    margin: 0 0 10px 0;
    max-width: 300px;
 	}
+div#news div.news-widgets article.news-item:nth-child(even) {
+    margin-right: 11px;
+}
+
 div#news div.news-widgets article.news-item h2{
 	/*font-size: 9px;*/
 	font-size:0.563em;
@@ -260,7 +264,7 @@ div#news div.news-widgets article.news-item h2{
 div.info{
 	overflow: hidden;
 }
-.date {
+.dates {
 	/*margin-bottom: 5px;*/
 	padding-top: 5px;
 	max-width: 60px;
@@ -429,13 +433,36 @@ article#single-item.single{
    moz-box-sizing: border-box !important;
 webkit-box-sizing: border-box !important;
 }
+
+.ecwd-widget-mini .ecwd-list-date {
+    width: 25% !important;
+    float: left;
+    height: 100% !important;
+    position: absolute !important;
+    padding: 10px 0 0 0 !important;
+    text-align: center !important;
+	font-size: 2em !important;
+    line-height: 1.5em !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.ecwd_list .ecwd-list-date {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-style: italic;
+}
+
 li.ecwd-no-image {
    padding: 0 10px 10px !important;
    overflow: hidden !important;
    position: relative !important;
-	
+   background-color: #f2f2f2;
 }
-.ecwd-widget-mini .calendar-head {
+	
+
+/*.ecwd-widget-mini*/ .calendar-head {
 	 height: 45px !important;
     margin-top: 0.5em !important;
 }
@@ -778,8 +805,8 @@ div.sci-contact p.sci-address-email{
 }
 
 .widget {
-    background-color: #fff;
-    box-shadow: 3px 3px 5px #ddd;
+    /*background-color: #fff;
+    box-shadow: 3px 3px 5px #ddd;*/
 	margin-bottom: 20px;
     margin-right: 7px;	
 }
