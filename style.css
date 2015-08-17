@@ -2144,7 +2144,7 @@ html body.home.page.page-id-9.page-template-default div#widgets section.widgets-
 		padding: 0;
 	}
     
-    #primary {
+    #primary, #blog {
 		display:none;
 	}
     
