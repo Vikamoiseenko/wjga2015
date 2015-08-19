@@ -14,10 +14,10 @@
     <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">View &raquo;</a></p>
     </div>
     <?php endwhile; ?>
-    <ul class="post-navigation">
-    <li class="post-navigation-previous"><?php previous_posts_link( '&laquo;&nbsp;Previous' ) ?></li>
-    <li class="post-navigation-next"><?php next_posts_link( 'Next&nbsp;&raquo;'); ?></li>
-    </ul>
+<nav class="post-nav">
+            <p class="alignleft"><?php next_posts_link('&laquo; Older Posts') ?></p>
+            <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
+		</nav>
    	<section class="search-again">
     <p>Still not satisfied... Try another search?</p>
     <?php get_search_form(); ?>

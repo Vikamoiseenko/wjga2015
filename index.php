@@ -6,8 +6,7 @@
 <?php if (have_posts()) : ?>
 
     <?php while (have_posts()) : the_post(); ?>
-
-    	<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+<!--<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2> -->
 <article class="blogs" id="blogs-item">
 <div class="info">
 <div class="dates">
@@ -15,7 +14,7 @@
 <div class="data"><?php the_time('j') ?></div>
 </div><!-- end date div -->
 <div class="headline">
-<div class="head-title"><?php the_title(); ?></div>
+<div class="head-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></div>
 <div class="author">Authored by <?php the_author(); //get author name ?>| <?php the_category(', ') ?></div>
 </div><!-- end headline div -->
 </div><!-- end info div -->
@@ -29,7 +28,6 @@
             <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
 		</nav>
 <?php endif; ?>
-<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 </div><!-- END CONTENT -->
 
 

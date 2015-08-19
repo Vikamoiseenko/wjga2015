@@ -6,18 +6,12 @@
 	<?php else : ?>
     
      <div class="widget">
-		<h3>Search</h3>
-		<?php get_search_form(); ?>
-	 </div>
+<ul>
+<?php wp_get_archives('type=monthly'); ?>
+</ul>	
+ </div>
         
         
-     <div class="widget">	
-		<h3>Categories</h3>
-   		<ul>
-      	<?php wp_list_categories('title_li='); ?>
-   		</ul>
-     </div>
-
 	<?php endif; ?>
 
 </div><!--END SIDEBAR PRIMARY-->

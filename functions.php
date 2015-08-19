@@ -1,17 +1,17 @@
 <?php
 /*
-Theme Name: Team #5's WordPress Demo
+Theme Name: Washington Junior Golf Association
 Author: 
-KARLE, BRIANNA R
-CLEMENT, BENJAMIN A
+CLEMENT, BENJAMIN
+KARLE, BRIANNA
 MOISEENKO, VICTORIA
-PETRIE, CHRISTINA E
-MURPHY, MICHAEL J
- 
+MURPHY, MICHAEL
+PETRIE, CHRISTINA 
 Author URI: http://www.wjga.christinapetrie.com/
-Description: This is our demo theme for the WEB210  class.
+Description: Theme for Washington Junior Golf Association
 Version: 1.0
 */
+
 
 //Register my menu
 register_nav_menus(array(

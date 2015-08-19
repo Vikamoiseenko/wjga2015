@@ -1,9 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 /*
-Theme Name: Washington Junior Golf Association
-Author: Benjamin Clement, Brianna Karle, Victoria Moiseenko, Michael Murphy, Christina Petrie 
-Description: Theme for Washington Junior Golf Association
+Theme Name: Team #5's WordPress Demo
+Author: 
+KARLE, BRIANNA R
+CLEMENT, BENJAMIN A
+MOISEENKO, VICTORIA
+PETRIE, CHRISTINA E
+MURPHY, MICHAEL J
+ 
+Author URI: http://www.wjga.christinapetrie.com/
+Description: This is our demo theme for the WEB210  class.
 Version: 1.0
 */
 
@@ -81,7 +88,6 @@ iframe {
 p {
 	margin-bottom: 1.3em;
 	text-align: left;
-	color: #444;
 }
 
 h1, h2, h3, h4 {
@@ -143,8 +149,6 @@ h1 strong {
     margin: 0 auto;
     text-transform: capitalize;
 	text-align:center;
-	height:39px;
-	box-sizing:border-box;
 }
 
 #secondary p, #primary p, #events p, #blog p {
@@ -174,19 +178,19 @@ h1 strong {
 
 #content {
 	float:left;
-	width:63.5%;/*460px / 740*/
+	width:62.162162%;/*460px / 740*/
 	font-size:1em;
 	line-height: 1.5em;
 	padding-left:20px; /*older browsers*/
-	padding-left:.6em;
+	padding-left:1em;
 }
-#content h2 {
-    box-sizing: border-box;
-    color: #fff;
-    height: 39px;
-    padding: 2px 5px;
+#content h2{
+	background-color:transparent;
+	padding:2px 5px;
+	color:#DADBD6;
+	font-size: 2.0075 em;
+	height:39px;
 }
-
  div#main div#content.page h2{
 	 background-color:#22050E;
  }
@@ -194,7 +198,7 @@ h1 strong {
 	color:#647d62;
 }
 div#main div#content.index article#blogs-item.blogs {
-    box-shadow: 3px 3px 5px #ddd;
+    box-shadow: 3px 3px 10px #ccc;
     margin: 0;
 }
 #news{
@@ -246,7 +250,7 @@ div.news-widgets {
    float: left;
    height: 360px;
    margin: 0 0 10px 0;
-   width: 300px;
+   max-width: 300px;
 	}
 div#news div.news-widgets article.news-item:nth-child(even) {
     margin-right: 11px;
@@ -313,14 +317,14 @@ body.home.page.page-id-9.page-template-default.logged-in.admin-bar.customize-sup
 	color: #dbd9d6;
 	padding-top: 12px;
 }
-div.author{
+.author{
 	font-size:0.750em; /*12px*/
 	font-style:italic;
 	color: #dbd9d6;
 	padding-top: 3px;/*padding:0 4.5em;*/
 
 }
-div.author a{
+.author a{
 	color:#143020;
 }
 div.title{
@@ -365,12 +369,7 @@ color:#FFFFFF;
 /* SIDEBAR STYLES */
 #secondary {
 	float:right;
-	width:33%;
-}
-
-.sidebar .widget {
-    background-color: #fff;
-	box-shadow: 3px 3px 5px #ccc;	
+	width:32%;
 }
 
 #ai1ec_agenda_widget-4 {
@@ -391,7 +390,7 @@ color:#FFFFFF;
 
 #blog {
 	float:left;
-	width:21%;
+	width:20%;
 	margin-top: 9px;
 	font-size:1.1em;
 }
@@ -399,7 +398,7 @@ div#main div#content.index article#blogs-item.blogs{
 	/*max-width: 298px;*/
 	border:none;
 	margin: 0 6px 10px 0;
-	box-shadow: 3px 3px 5px #ddd;
+	box-shadow: 1px 1px 18px #000000;
 	background-color:#7f8d3c;
 	}
 article#single-item.single{
@@ -437,7 +436,7 @@ webkit-box-sizing: border-box !important;
     padding: 10px 0 0 0 !important;
     text-align: center !important;
 	font-size: 2em !important;
-    line-height: 1.5em !important;
+    line-height: 1.7em !important;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -473,8 +472,6 @@ li.ecwd-no-image {
     line-height: 1.875em;
     margin: 0 auto;
     text-transform: capitalize;
-	height:39px;
-	box-sizing:border-box;
 }
  .widget.widget_categories ul, .widget.widget_archive ul{
 	 list-style:none;
@@ -482,13 +479,6 @@ li.ecwd-no-image {
 	 line-height: 1.5em;
 	 padding-bottom:8px;
  }
- 
- .archive .post {
-		border-bottom: 1px solid #ccc;
-		margin-bottom: 1em;
-		padding-bottom: 4px;
-	}
-	
  ol.hfeed.vcalendar {
 	 margin: 10px;
 	 text-align: center;
@@ -502,7 +492,7 @@ li.ecwd-no-image {
     float: left;
     font-size: 1.1em;
     margin-top: 10px;
-    width: 21%;
+    width: 19.1489%;
 	background-color: #fff;
 	min-height:740px;
 }
@@ -606,7 +596,6 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
 	float:right;
 	overflow:hidden;
 	margin-left: 10px;
-	margin-top:7px;
 }
 #social-header .fa-2x{
 	font-size:2em;
@@ -752,58 +741,6 @@ form.search {
 	/*border: 1px solid magenta;*/
 }
 
-.search-results h2 {
-    background-color: #22050e;	
-}
-.search-results h3 {
-    text-align:left;	
-	box-sizing: border-box;
-	font-size: 1.75em;
-    height: 39px;
-    padding: 2px 0px;
-}
-
-.search .page-excerpt {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1em;
-    padding-bottom: 4px;	
-}
-
-.post-nav {
-    display:inline;	
-}
-
-.post-nav .alignleft {
-	color:blue;
-}
-
-.post-nav .alignright {
-    color: red;	
-}
-
-.search-again {
-    background-color: #fff;
-    box-shadow: 3px 3px 5px #ccc;
-    clear: both;
-    margin-bottom: 1em;
-    padding: 10px;
-}
-
-#searchform {
-    
-}
-.search #searchsubmit {
-    display: inline;
-    font-size: 14px;
-    line-height: 1em;
-    margin-left: 5px;
-	box-shadow:none;	
-}
-
-.search #s {
-    display:inline;	
-}
-
 #middle {
 	max-width:940px;
 	margin:0 auto;
@@ -862,8 +799,8 @@ div.sci-contact p.sci-address-email{
 }
 
 .widget {
-    background-color: #fff;
-    box-shadow: 3px 3px 5px #ddd;
+    /*background-color: #fff;
+    box-shadow: 3px 3px 5px #ddd;*/
 	margin-bottom: 20px;
     margin-right: 7px;	
 }
@@ -912,15 +849,14 @@ div.sci-contact p.sci-address-email{
 
 /* BOX STYLES */
 .section-box {
-	background-color: #22050e;
-    border: medium none;
-    box-shadow: 3px 3px 5px #666666;
-    box-sizing: border-box;
-    color: #dbd9d6;
-    height: auto;
-    margin-bottom: 0;
-    width: 220px;
-}
+	border:none;
+	background-color: #22050E;
+	box-shadow: 3px 3px 5px #666666;
+	/*max-width:220px;*/
+	width:220px;
+	height: 76px;
+	color:#dbd9d6;
+	}
 .section-boxes{
 	font-family:'Helvetica', arial, sans-serif;
 	font-size: 1.125em;
@@ -947,14 +883,11 @@ i.fa-arrow-circle-right {
 	font-size: 1.125em;
 }
  div.section-box p#button{
-	background-color: #22050e;
-    color: #ffffff;
-    font-size: 1.3125em;
-    font-weight: 700;
-    height: auto;
-    line-height: 2em;
-    margin-bottom: 0;
-    text-transform: uppercase;
+	background-color: #22050E;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	font-weight:700;
+	font-size: 1.3125em;
 }
 
 /*#button p {
@@ -966,13 +899,14 @@ i.fa-arrow-circle-right {
 	}
 	*/
 #button a{
-	color: #ffffff;
-    display: block;
-    font-size: 1.125em;
-    font-weight: 500;
+	display:block;
 	/*background-color: #22050E;*/
-	text-align: center;
-    text-transform: uppercase;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	text-align:center;
+	font-size: 1.3125em;
+	font-weight:500;
+	padding-top:16px;
     }
 
 .box-left {
@@ -993,11 +927,9 @@ i.fa-arrow-circle-right {
 	}
 
 article.box-left {
-    float: left;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    max-height: 300px;
     overflow: hidden;
+    margin-right: 10px;
+	float:left;
     /*margin-right: 10px;*/
 }
  div.wrap{		
@@ -1014,12 +946,11 @@ article.box-left {
 	padding-right:0.625rem; /*10px /16px */
     padding-top: 10px;
 	padding-bottom: 10px;
-	margin-bottom: 1em;
+	margin-bottom: 10px;
     margin-top: 0px;
 	background-color:transparent;
     box-shadow: 0;
-	
-
+    border-bottom: 2px solid #ccc;
 }
  div#middle div#main div#content.single div#respond{
 		clear:both;
@@ -1273,7 +1204,7 @@ div.aligncenter {
     margin: 5px auto 5px auto;
 }
 h2.pagetitle {
-    background-color: #22050e;
+    font-size: 1.45em;
 }
 
 .alignright {
@@ -1836,11 +1767,13 @@ ul .sub-menu{
 }
 
 #menu-footer ul.sub-menu li a:hover {
-		color: #ddd;
+		border-bottom: 1px solid #000000;
+		color: #000000;
 	}
 	
 #menu-footer ul.sub-menu li.current_page_item a {
-		color: #ddd;
+		color: #000000;
+		border-bottom: 1px solid #000000;
 	}
 
 /* end footer navigation */
@@ -1848,6 +1781,7 @@ ul .sub-menu{
 #site-info{
 	margin: 0 auto;
 	clear:both;
+	padding: 15px;
 	height: 30px;
 	background-color:#666;
 	border: 1px solid #000000;
@@ -1862,16 +1796,16 @@ ul .sub-menu{
 	color:#FFFFFF;
 	max-width: 980px;
 	margin: 0px auto;
-
 }
 
-#site-info a:link {
-    color: #fff;	
-}
+#site-info a:link, #site-info a:visited {
+	color:#F2F2F2;
+	}
+	
+#site-info a:hover{
+	color: #fffffff;
+	}
 
-#site-info a:visited, #site-info a:hover {
-    color: #ddd;	
-}
 /* COMMENTS */	
 #comments-head {
 	border-bottom: 1px solid #ddd;
@@ -2085,13 +2019,22 @@ div.news-widgets {
 	padding-top:15px;
 }
 		
-#primary {
+	#primary {
 		float: none;
+		width: auto;
 		margin-bottom: 20px;
 	}
     	
 #menu-footer ul li {
 margin-right: 2.12%;
+}
+
+#menu-footer ul.sub-menu li.current_page_item a {
+    color: #647D62;
+    border-bottom: 1px solid #647D62;
+}
+#menu-footer ul.sub-menu li a:hover {
+    color: #647D62;
 }
 	#util-footer{
 width:100%;
@@ -2222,7 +2165,6 @@ div.news-widgets {
 	display:none;
 }
 
-
 	#util-footer{
 width:100%;
 	}
@@ -2255,7 +2197,7 @@ width:100%;
 	body {
 		padding: 0;
 	}
-
+    
     #primary {
 		display:none;
 	}
@@ -2267,17 +2209,11 @@ width:100%;
     #menu-footer {
 	display: none;
 }
-    
-    #blog.sidebar {
-    display: none;  
-    }
-    
 #mainLogo {
-    left: 0em;
+    left: 0.5em;
     max-width: 120px;
     position: absolute;
-    right:0em;
-	margin:2.75em auto;
+    top: 0.25em;
 }
 #widgets section.widgets-item{
 	max-width: 100%;
@@ -2343,21 +2279,14 @@ div.im-news img.attachment-post-thumbnail.wp-post-image {
 	width:94%;
     float: none;
 	}
-	
-    #menu-footer {
+	#menu-footer {
 	display: none;
-    }
-    
-    #blog.sidebar {
-    display: none;    
-    }
-    
+}
 #mainLogo{
-	left: 0em;
-    max-width: 120px;
-    position: absolute;
-    right:0em;
-	margin:2.75em auto;
+	float:none;
+	display:block;
+	margin: -1.5em auto 1.5em;
+
 }
  div#news div.news-widgets article.news-item {
 	width: 100%;
@@ -2382,6 +2311,7 @@ div.news-widgets {
 #search {
     float: right;
     position: relative;
+    margin-left: 5px;
 }
 
 #social-header .fa-2x {
@@ -2437,20 +2367,17 @@ div.im-news img.attachment-post-thumbnail.wp-post-image {
 	    width:90%;
         float: none;
 	}
-    
-    #blog.sidebar {
-    display: none;    
-    }
 	
 	#header {
 	    height:165px;	
 	}
     #mainLogo {
-		left: 0em;
-		max-width: 120px;
-		position: absolute;
-		right:0em;
-		margin:2.75em auto;
+		display: block;
+		float: none;
+		margin: 0 auto;
+		padding-top: 3em;
+		position: relative;
+		width: 110px;
 	}
 	 div#news div.news-widgets article.news-item {
 		width: 100%;

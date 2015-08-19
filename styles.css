@@ -193,8 +193,8 @@ table.cal_blue.ecwd_calendar_container .has-events {
     cursor:pointer;
 }
 table.cal_blue.ecwd_calendar_container .has-events:hover {
-    -webkit-box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;
-    box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;
+   /* -webkit-box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 6px;*/
 }
 table.cal_blue.ecwd_calendar_container .week-start {
     border-left:1px solid #D6DDE2;
@@ -326,9 +326,9 @@ div.ecwd-page-month table.cal_blue div.event-details, div.ecwd-page-full table.c
     max-height:350px;
     overflow-y: auto;
     border:1px solid rgba(0,0,0,0.25);
-    -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+   /* -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
     -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);*/
 }
 
 
@@ -472,12 +472,14 @@ table.cal_blue.mini {
 
 .ecwd-widget-mini .ecwd-week-date,
 .ecwd-widget-mini .ecwd-list-date {
-    width:10%;
+    width:25%;
     float: left;
-    height: 42px;
+    height: 100% !important;
+    border-bottom: 3px #f2f2f2 solid;
     padding: 10px 0 0 0 !important ;
     text-align: center !important;
-    line-height: 21px !important;
+	font-size: 2em;
+    line-height: 1.7em !important;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -773,9 +775,9 @@ div.ecwd-page-full td.has-events {
     font-size: 1.3em;
     padding: 6px;
     text-decoration: none;
-    -webkit-box-shadow: 0 1px 2px rgba(1,2,2,.2);
+    /*-webkit-box-shadow: 0 1px 2px rgba(1,2,2,.2);
     -moz-box-shadow: 0 1px 2px rgba(1,2,2,.2);
-    box-shadow: 0 1px 2px rgba(1,2,2,.2);
+    box-shadow: 0 1px 2px rgba(1,2,2,.2);*/
 }
 table.cal_blue.ecwd_calendar_container select {
     padding:6px;
@@ -787,9 +789,9 @@ table.cal_blue.ecwd_calendar_container select {
     border-radius: 3px;
     outline:none;
     text-shadow: 0 1px 1px rgba(1,2,2,.3);
-    -webkit-box-shadow: 0 1px 2px rgba(1,2,2,.2);
+   /* -webkit-box-shadow: 0 1px 2px rgba(1,2,2,.2);
     -moz-box-shadow: 0 1px 2px rgba(1,2,2,.2);
-    box-shadow: 0 1px 2px rgba(1,2,2,.2);
+    box-shadow: 0 1px 2px rgba(1,2,2,.2);*/
 }
 .ecwd_calendar_view_tabs{
     position: relative;
@@ -2366,13 +2368,13 @@ a.ecwd-google-plus{
         clear:both;
     }
 
-    div[class^="ecwd-page-"] .ecwd-week-date, div[class^="ecwd-page-"] .ecwd-list-date {
+    div[class^="ecwd-page-"] .ecwd-week-date, div[class^="ecwd-page-"] /*.ecwd-list-date*/ {
         width: 10%;
         float: left;
         height: 42px;
         padding: 10px 0 0 0 !important;
         text-align: center !important;
-        line-height: 21px !important;
+       /* line-height: 21px;*/
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
