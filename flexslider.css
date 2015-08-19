@@ -86,38 +86,42 @@ height: auto;
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
-div.flexslider blockquote.home {
-	position: absolute;
-	/*top: 20px; */
-	bottom: 50px;
-	right: 20px;
-	text-align: left;
-	color: #FFF;
-	text-shadow: 2px 2px #000;
-	max-width: 420px;
-	z-index: 3;
-	font-family: 'Raleway', 'Helvetica', sans-serif;
-	font-size: 1.338em;
-	background-color:#435442;
-	border-radius: 10px;
-	line-height: 160%;
-	padding: 4px 10px;
-	}	
+	
+	div.flexslider blockquote.home {
+    position: absolute;
+    /* top: 20px; */
+    bottom: 20px;
+    right: 20px;
+    text-align: left;
+    color: #FFF;
+    text-shadow: 2px 2px #000;
+    height: 40%;
+    width: 45%;
+    z-index: 3;
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    font-size: 1.338em;
+    background-color: rgba(67, 84, 66, .7);
+    border-radius: 15px;
+    line-height: 1.5em;
+    padding: 4px 10px;
+}
+		
 div.flexslider button.home {
-	position: absolute;
-	bottom: 50px;
-	right: 60px;
-	text-align: left;
-	max-width: 450px;
-	z-index: 3;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.5em;
-	line-height: 150%;
-	padding: 4px 10px;
-	background-color: #143020;
-	border: 0;
-	color:#dbd9d6;
-	}
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-align: left;
+    max-width: 450px;
+    z-index: 3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    border-radius: 15px;
+    padding: 4px 10px;
+    background-color: #143020;
+    border: 0;
+    color: #dbd9d6;
+}
 	
 	div.flexslider a button  {
 		display: block;
@@ -173,6 +177,8 @@ div.flexslider button.home {
 		display: inline;
 		color: #000;
 		text-shadow: none;
+		height:auto;
+		background-color:none;
 		max-width:100%;
 		font-size: 1em;
 		line-height: 150%;
@@ -197,10 +203,10 @@ div.flexslider button.home {
 		text-align: left;
 		max-width: 100%;
 		font-size: 1em;
-		line-height: 150%;
+		line-height: 1.5em;
 		text-align: left;
 		padding: 0;
-		background: none;
+		background: #FFFFFF;
 		top: 0;
 		left: 0;
 	}

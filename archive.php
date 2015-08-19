@@ -23,18 +23,20 @@
 		<h2 class="pagetitle">Blog Archives</h2>
  	  <?php } ?>
 
-		<?php while (have_posts()) : the_post(); ?>
-        <article class="post"> 
+<?php while (have_posts()) : the_post(); ?>
+		  <article class="post"> 
         	
             <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <p class="postmetadata">
             <span>Posted on <?php the_time('F jS, Y') ?></span> in 
             <span><?php the_category(', ') ?></span> by
             <span><?php the_author_posts_link() ?> </span>
-        	</p>
-            
-        </article> 
-    
+        	</p>              
+			
+            <?php the_excerpt(); ?>
+        	<p class="read-more"><?php echo substr(get_the_excerpt(), 0,30); // get page or posting written excerpt with a character count ?>... <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More</a></p>         
+        
+        </article>    
 		<?php endwhile; ?>
 
            <div class="alignleft"><?php previous_posts_link() ?></div>

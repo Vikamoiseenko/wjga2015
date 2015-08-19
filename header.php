@@ -9,6 +9,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- end meta -->
 
+<!--Favicon -->
+
+<link rel="icon" type="image/png" href="http://www.wjga.christinapetrie.com/wp-content/themes/test/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://www.wjga.christinapetrie.com/wp-content/themes/test/favicon-16x16.png" sizes="16x16" />
+<link rel="shortcut icon" href="http://www.wjga.christinapetrie.com/wp-content/themes/test/favicon.ico" type="image/x-icon">
+<!--Favicon -->
+
 <!-- begin style -->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -52,11 +59,10 @@
 <div id="utilities-header">
 <!-- Begin Social  Icon-->
 <div id="social-header">
-<i class="fa fa-envelope-o fa-2x"></i>
-<i class="fa fa-facebook-square fa-2x"></i>
-<i class="fa fa-twitter-square fa-2x"></i>
-<i class="fa fa-youtube fa-2x"></i>
-<i class="fa fa-instagram fa-2x"></i>
+<a href="mailto:wjgaoffice@aol.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+ <a href="https://www.facebook.com/pages/Washington-Junior-Golf-Association/98124954911" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+ <a href="https://mobile.twitter.com/wjga1976" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+ <a href="https://www.youtube.com/channel/UCOGe4Oqt2qZm8MSD1GBjeZw" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
 </div> <!-- end social icon -->
 <!--<div id="link2">
 <ul>

@@ -16,11 +16,8 @@
 	<?php endwhile; ?>
 	<?php endif; ?>   
  </div>
-<div id="calendar">
-<?php get_sidebar( 'gallery' ); ?>
-</div>
+<?php get_sidebar( 'secondary' ); ?>
 <table align="center"><?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?></table>
-</div>
 
 
 
