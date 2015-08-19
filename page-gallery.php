@@ -16,8 +16,12 @@
 	<?php endwhile; ?>
 	<?php endif; ?>   
  </div>
+<nav class="post-nav">
+            <p class="alignleft"><?php next_posts_link('&laquo; Older Posts') ?></p>
+            <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
+		</nav>
+        
 <?php get_sidebar( 'secondary' ); ?>
-<table align="center"><?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?></table>
 
 
 

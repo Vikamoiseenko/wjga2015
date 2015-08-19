@@ -88,41 +88,40 @@ height: auto;
 
 	
 	div.flexslider blockquote.home {
-    position: absolute;
-    /* top: 20px; */
+    background-color: rgba(67, 84, 66, 0.8);
+    border-radius: 5px;
     bottom: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Raleway","Helvetica",sans-serif;
+    font-size: 1.338em;
+    height: 40%;
+    line-height: 1.5em;
+    padding: 10px;
+    position: absolute;
     right: 20px;
     text-align: left;
-    color: #FFF;
-    text-shadow: 2px 2px #000;
-    height: 40%;
     width: 45%;
     z-index: 3;
-    font-family: 'Raleway', 'Helvetica', sans-serif;
-    font-size: 1.338em;
-    background-color: rgba(67, 84, 66, .7);
-    border-radius: 15px;
-    line-height: 1.5em;
-    padding: 4px 10px;
 }
-		
-div.flexslider button.home {
-    position: absolute;
+	div.flexslider button.home {
+    background-color: #143020;
+    border: 0 none;
+    border-radius: 5px;
     bottom: 30px;
-    right: 30px;
-    text-align: left;
-    max-width: 450px;
-    z-index: 3;
-    font-family: 'Raleway', sans-serif;
+    color: #dbd9d6;
+    font-family: "Raleway",sans-serif;
     font-size: 18px;
     line-height: 1.5em;
-    border-radius: 15px;
+
+    max-width: 450px;
     padding: 4px 10px;
-    background-color: #143020;
-    border: 0;
-    color: #dbd9d6;
+    position: absolute;
+    right: 30px;
+    text-align: left;
+    z-index: 3;
 }
-	
+		
 	div.flexslider a button  {
 		display: block;
 		color: #000;
@@ -171,45 +170,43 @@ div.flexslider button.home {
 	.flex-control-paging, .flex-direction-nav {
 		display: none;
 	}
-	
 	div.flexslider blockquote.home {
-		position: relative;
-		display: inline;
-		color: #000;
-		text-shadow: none;
-		height:auto;
-		background-color:none;
-		max-width:100%;
-		font-size: 1em;
-		line-height: 150%;
-		text-align: left;
-		top: 0;
-		left: 0;
-		/*border: 1px solid magenta;*/
-		}
-		
-	div.flexslider a button.home {
-		color: #000; /* DARK RED */
-	}
-	
+    border-radius: 0;
+    color: #fff;
+    font-size: 1em;
+    left: 0;
+    line-height: 150%;
+    margin: 0 auto;
+    min-height: 50px;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    top: 0;
+    width: 100%;
+    box-sizing:border-box;
+}
+
+div.flexslider button.home {
+    border-radius: 0;
+    color: #fff;
+    font-size: 1em;
+    left: 0;
+    line-height: 1.5em;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+body.home .flexslider img {
+    margin-bottom:0;
+}		
 	div.flexslider a:hover button.home {
 		color: #A7181D; /* DARK RED */
 		text-shadow: none;
 	}
 		
-	div.flexslider button.home {
-		position: relative;
-		display: inline;
-		text-align: left;
-		max-width: 100%;
-		font-size: 1em;
-		line-height: 1.5em;
-		text-align: left;
-		padding: 0;
-		background: #FFFFFF;
-		top: 0;
-		left: 0;
-	}
 	
 	
 }
