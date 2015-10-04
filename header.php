@@ -96,9 +96,6 @@
       );
 ?>
 </div>
-<!--</div>
-<!-- end Navigation -->
-
 
 </div> <!--end header -->
 <!-- END MAIN NAVIGATION -->
