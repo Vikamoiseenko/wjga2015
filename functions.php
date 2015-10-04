@@ -73,7 +73,7 @@ function my_register_sidebars() {
 		)
 	);
 	
-		/* Register the 'Gallery' sidebar. */
+		/* Register the 'tertiary' sidebar. */
 	register_sidebar(
 		array(
 			'id' => 'gallery',
@@ -108,6 +108,7 @@ function my_register_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
+    
 	/* Register the 'tertiary' sidebar. */
 	register_sidebar(
 		array(
@@ -199,7 +200,7 @@ function add_flexslider() {
     
     foreach ( $attachments as $attachment_id => $attachment ) { 
 	
-		$theImage = wp_get_attachment_image($attachment_id, 'full');
+		$theImage = wp_get_attachment_image($attachment_id, 'flexslider');
 		$theBlockquote = get_post_field('post_excerpt', $attachment->ID);
 		$theLink = get_post_field('post_content', $attachment->ID);
 	
@@ -215,7 +216,7 @@ function add_flexslider() {
 		
 		else { // use large size image with caption for all other pages and postings
 			
-			echo wp_get_attachment_image($attachment_id, 'large');
+			echo wp_get_attachment_image($attachment_id, 'flexslider');
 			echo '<p>';
 			echo get_post_field('post_excerpt', $attachment->ID);
 			echo '</p>';
@@ -232,7 +233,8 @@ function add_flexslider() {
         
 	<?php }// end see if images
 	
-} // end add flexslideradd_shortcode( 'flexslider', 'add_flexslider' ); 
+} // end add flexslide 
+add_shortcode( 'flexslider', 'add_flexslider' ); 
 
 //Enable Feauture images and post thumbnails
 add_theme_support('post-thumbnails');
@@ -240,12 +242,19 @@ add_theme_support('post-thumbnails');
 
 add_image_size( 'feed-center', 300, 150, array (left, top) ); // 300 pixels wide by 150 pixels tall, hard left center crop mode
 add_image_size( 'feed', 300, 150, false ); // 300 pixels wide by 150 pixels tall, soft proportional crop mode
+add_image_size( 'feed-flexs', 940, 380, false ); // 940 pixels wide by 380 pixels tall, soft proportional crop mode
+add_image_size( 'feed-fl', 940, 380, array (left, top) ); // 300 pixels wide by 150 pixels tall, hard left center crop mode
+add_image_size( 'flexslider', 940, 380, array (left, top) ); // 300 pixels wide by 150 pixels tall, hard left center crop mode
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 function my_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'feed-center' => __( 'feed center' ),
 		'feed' => __( 'feed' ),
+		'feed-flexs' => __( 'feed flexslider' ),
+		'feed-fl' => __( 'flexslider2' ),
+		'flexslider' => __( 'Flexs' ),
+
     ) );
 }
 

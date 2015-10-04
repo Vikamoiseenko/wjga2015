@@ -432,7 +432,7 @@ article#single-item.single{
 	clear: both;
     float: right;
     margin-right: 12px;
-    margin-top: -793px;
+    margin-top: -794px;
     overflow: hidden;
     width: 32.2%;
 }
@@ -724,6 +724,7 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
 
 #wjga {
 	float: left;
+	margin-right:6em;
 }
 #wjga p{
 	margin-top:10px;
@@ -736,7 +737,7 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
 #link{
 	right:0;
 	margin-top:26px;
-	float:right;
+	float:left;
 }
 #link ul {
 	margin-bottom: 0px;
@@ -1476,17 +1477,14 @@ a img.aligncenter {
 overflow: hidden;
 margin-bottom: 20px;
 }
-img.wp-post-image {
-	width:100%;
-}
+img.wp-post-image {}
 img.attachment-thumbnail {}
 img.attachment-medium {}
 img.attachment-large {}
 img.attachment-full {}
 
 img.attachment-post-thumbnail {
-    margin-bottom: 5px;
-	margin-top: 5px; 
+    margin-bottom: 20px;
 
 }
 
@@ -1931,6 +1929,8 @@ ul .sub-menu{
 
 #site-info {
     background-color: #666;
+    border: 1px solid #000000;
+    box-sizing: border-box;
     clear: both;
     height: 30px;
     margin: 0 auto;
@@ -2032,22 +2032,22 @@ ul .sub-menu{
 
 @media all and (min-width: 1501px) {
     #header {
-	    max-width:940px;	
+	    max-width:1200px;	
 	}
 	#cssmenu {
-	    max-width:940px;		
+	    max-width:1200px;		
 	}
 	#middle {
-		max-width:940px;	
+		max-width:1200px;	
 	}
 	#util-footer {
-		max-width:940px;	
+		max-width:1200px;	
 	}
 	nav.footer-main {
-		max-width:940px;	
+		max-width:1200px;	
 	}
 	#site-info p {
-		max-width:940px;	
+		max-width:1200px;	
 	}
 }
 
@@ -2144,23 +2144,7 @@ blockquote.home {
 } 
 
 }
-@media screen and (max-width: 850px) {
-#wjga {
-    float: left;
-    margin-right: 3.5%;
-    width: 31%;
-}
-#social-footer {
-    float: left;
-    margin-right: 3.5%;
-    margin-top: 20px;
-    width: 31%;
-}
-#link {
-    width:30%;	
-	margin-top:20px;
-}
-}
+	
 
 /* Tablet Screen Set to 800px or Below */
 @media screen and (max-width: 800px) {
@@ -2180,15 +2164,11 @@ body {
 		padding: 10px 20px;
 	}
 	
-#middle #gallery {
+#gallery {
     float: none;
     margin: 0 auto;
     max-width: 60%;
     overflow: hidden;
-}
-
-#gallery h2 {
-    width:98%;	
 }
 
 	
@@ -2222,8 +2202,8 @@ div#news div.news-widgets article.news-item {
 	}
 		
 #calendar {
-	/*width: 100%;
-	float: none;*/
+	width: 100%;
+	float: none;
 	margin-bottom: 20px;
 }
 
@@ -2266,32 +2246,23 @@ div#news div.news-widgets article.news-item {
 @media screen and (max-width: 750px) {
     /* Styles */
     
-#cssmenu,
+	#cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a,
 #cssmenu #menu-button {
-    z-index:0;
-    /*z-index-0;*/
+  z-index:0;
+ /*z-index-0;*/
 }
 #menu-footer {
 	display: none;
 }
-
-body {
-	padding: 0;
-}
-	
-
-#widgets section.widgets-item {
-    margin-right: 0.5%;
-    width: 32.6%;
-}
-
-div#widgets section.widgets-item a.button {
-    margin: 0 auto 1em;
-    padding: 2px 25px 3px;
-    width: 100px;
+	body {
+		padding: 0;
+    }
+#widgets section.widgets-item{
+	width: 30%;
+	margin-right: 3%;
 }
 
 #mainLogo {
@@ -2303,13 +2274,9 @@ div#widgets section.widgets-item a.button {
     top: 0.25em;
 }
 
-	
-div.news-widgets {
-    float: none;
-    margin: 20px auto;
-    width: 100%;
-}
-
+ div#news div.news-widgets article.news-item {
+	width: 100%;
+	}
 #util-footer{
     width:100%;
 	}
@@ -2342,7 +2309,8 @@ div.news-widgets {
 }
 
 div#main div#content.page h2 {
-   
+    margin-left:15px;
+	margin-right:10px;	
 }
 html body.home.page.page-id-9.page-template-default div#widgets section.widgets-item button#button {
 	width: auto;
@@ -2369,16 +2337,6 @@ article.box-left {
     margin: 0 auto;
     width: 95%;
 }
-
-#calendar {
-    float: none;
-    margin: 0 auto;
-    width: 100%;
-}
-
-div#news p.read-more-1 {
-	    display:none;	
-	}
 
 }
 
@@ -2414,10 +2372,8 @@ body {
 #widgets section.widgets-item{
 	width: 100%;
 	margin-bottom:20px;
-	max-width:100%;
 	
 }
-
  div#news div.news-widgets article.news-item {
 	max-width: 100%;
 	height:auto;
@@ -2687,10 +2643,6 @@ div.im-news img.attachment-post-thumbnail.wp-post-image {
 		right: 5px;
 		top: 5px;
 	}	
-	
-	div#news p.read-more-1 {
-	    display:none;	
-	}
 	
 	#searchsubmit {
 		border: none;

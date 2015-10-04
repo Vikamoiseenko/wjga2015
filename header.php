@@ -27,7 +27,7 @@
 
 <!-- Begin Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
 <!--<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>-->
@@ -36,10 +36,15 @@
 <!-- Begin Flex Slider -->
 <script type="text/javascript" charset="utf-8">
   $(window).load(function() { // enable function upon window load
-    $('.flexslider').flexslider(); // call flexslider function
+    $('.flexslider').flexslider({
+		animation: "fade",
+		slideshow: false,
+		smoothHeight: true
+	}); // call flexslider function
   });
 </script>
 <!-- End Flex Slider -->
+
 <!-- Start WP head -->
 <?php wp_head(); ?>
 <!-- End wp head -->

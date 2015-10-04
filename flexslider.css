@@ -150,8 +150,10 @@ height: auto;
 @media screen and (max-width: 750px) {
 	
 	.flexslider {
-    	text-align: left;
-		margin-bottom: 0;
+    	background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 		}
 		
 	body.home .flexslider {
@@ -196,9 +198,14 @@ div.flexslider button.home {
     position: relative;
     text-align: center;
     top: 0;
-    width: 100%;
+   max-width: 100%;
 }
 
+div.flexslider button.home {
+
+     width:100%;
+
+}
 body.home .flexslider img {
     margin-bottom:0;
 }		
