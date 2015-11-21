@@ -35,13 +35,19 @@ a {
 
 html {
 	/*font-size: 16px; */
+	height: 100%; overflow: auto; margin: 0;
+	-webkit-overflow-scrolling: touch;
 }
 
 body{
 	font-size: 100%;
 	font-family:  'Helvetica', arial, sans-serif;
 	background-color:#F2F2F2;
+		height: 100%; overflow: auto; margin: 0;
+	-webkit-overflow-scrolling: touch;
+
 }
+
 
 a:link, 
 a:visited {
