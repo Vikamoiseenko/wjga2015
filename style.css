@@ -42,7 +42,7 @@ html {
 body{
 	font-size: 100%;
 	font-family:  'Helvetica', arial, sans-serif;
-	background-color:#F2F2F2;
+	background-color:#f1f1f1;
 		height: 100%; overflow: auto; margin: 0;
 	-webkit-overflow-scrolling: touch;
 
@@ -51,7 +51,7 @@ body{
 
 a:link, 
 a:visited {
-	color: #647D62 ;
+	color: #277d31 ;
 	}
  div.headline div.head-title a	{
 	 color: #dbd9d6;
