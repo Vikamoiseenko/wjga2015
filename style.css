@@ -774,9 +774,10 @@ html#index-page.js.no-mobile.desktop.no-ie.ff.ff39.root-section.w-1412.gt-240.gt
     background-color: #7f8d3c;
     color: #f2f2f2;
     font-size: 14px;
-    line-height: 1em;
+    /*line-height: 1em;*/
+    line-height:1.2em;
     border-radius: 10px;
-    box-shadow: 1px 1px 18px #000;
+    /*box-shadow: 1px 1px 18px #000;*/
 	border:none;  
 	font-family: 'raleway', 'helvetica', arial, sans-serif;
 }
