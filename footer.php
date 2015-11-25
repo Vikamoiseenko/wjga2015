@@ -24,7 +24,7 @@
 <!-- begin footer menu -->
 <div id="menu-footer">
     <nav class="footer-main">
-    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+    <?php wp_nav_menu( array( 'theme_location' => 'Footer-menu' ) ); ?>
     </nav>
     </div> <!-- end footer menu -->
 
