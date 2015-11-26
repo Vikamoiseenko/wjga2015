@@ -13,7 +13,7 @@
 <div id="link">
 <ul>
 <li><a href="/contact">Contact | </a></li>
-<li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=ONBOeocxofFvghp0U2wViOxh24FneLSlmH6xXJdxgmmAxG0gSHe67B786py&dispatch=5885d80a13c0db1f8e263663d3faee8d5c97cbf3d75cb63effe5661cdf3adb6d">Donate | </a></li>
+<li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=MvPPp3OwNQNGVtc4EmWnO_RcBvb2Gqvzsk0MuuGQrz5MT-WERELuTMKdyYK&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2">Donate | </a></li>
 <li><a href="/disclaimer">Disclaimer</a></li>
 </ul>
 </div>
