@@ -3,8 +3,8 @@
    
      <!-- Begin Sub-Navigation -->
     <?php if (is_page()) : // if we are in "pages"... ?>
-    <h2 >
-    <?php echo get_the_title($post->post_parent); // ...get the gateway page title ?></h2>
+    <h2 ><a class="sidebar" href="<?php echo get_permalink($post->post_parent); ?>">
+        <?php echo get_the_title($post->post_parent); // ...get the gateway page title ?></a></h2>
     <ul class="sub-navigation-items"><?php 
     
     if ($post->post_parent) { // if the page has a parent...

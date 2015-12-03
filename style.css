@@ -62,7 +62,12 @@ a:visited {
  div.headline div.head-title a	{
 	 color: #dbd9d6;
  }
- 
+div#middle aside#primary h2 a.sidebar{
+    color:#ffffff;
+}
+div#middle aside#primary h2 a.sidebar:hover, a.sidebar:focus {
+    color: #647D62;
+}
 a:hover, 
 a:focus {
 	color: #647D62;
@@ -147,7 +152,7 @@ h1 strong {
 	text-align:left;*/
 }
 
-#secondary h2, #primary h2, #events h2, #blog h2  {
+#secondary h2, #primary h2, #events h2, #blog h2 #primary h2 a{
 	background-color: #143020;
     color: #ffffff;
     font-family: "Raleway",sans-serif;
