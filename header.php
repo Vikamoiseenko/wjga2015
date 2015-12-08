@@ -57,7 +57,7 @@
 <!-- begin logo -->
 <div id="logo">
 <a href="<?php echo get_settings('home'); ?>" title="Link to Washinghton Junior Golf Association">
-<img id="mainLogo" src="<?php bloginfo('template_directory'); ?>/images/wjga-logo.png" />
+<img id="mainLogo" src="<?php bloginfo('template_directory'); ?>/images/wjgalogofinal.png" />
 </a>
 </div><!-- end logo -->
 <!-- Begin Utility Menu -->
