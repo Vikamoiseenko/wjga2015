@@ -249,25 +249,29 @@ div.news-widgets {
 	margin-right: -20px;
 	overflow: hidden;
 	/*max-width:612px;*/
-	max-width:615px;
+	/*max-width:615px;*/
+    width:66%;
 	float:left;
 }
  div#news div.news-widgets article.news-item {
-	-moz-border-bottom-colors: none;
-   -moz-border-left-colors: none;
-   -moz-border-right-colors: none;
-   -moz-border-top-colors: none;
-   border-bottom: 1px solid #ccc;
-   border-image: none;
-   border-left: 1px solid #ccc;
-   border-right: 1px solid #ccc;
-   float: left;
-   height: 360px;
-   margin: 0 0 10px 0;
-   width: 300px;
-	}
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom: 1px solid #ccc;
+    border-image: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+    height: 360px;
+    margin: 0 0 10px 0;
+    /*width: 300px;*/
+    width:48.5%;
+    box-sizing:border-box; 
+     
+}
 div#news div.news-widgets article.news-item:nth-child(even) {
-    margin-right: 11px;
+    margin-right: 3%;
 }
 
 .news-widgets .author {
@@ -448,10 +452,10 @@ article#single-item.single{
 #calendar {
 	clear: both;
     float: right;
-    margin-right: 12px;
-    margin-top: -793px;
+    /*margin-right: 12px;*/
+    margin-top: -791px;
     overflow: hidden;
-    width: 32.2%;
+    width: 32%;
 }
 
 #calendar .widget {
@@ -461,14 +465,14 @@ article#single-item.single{
 	margin-bottom:0;
 }
 .event-main-content {
-   float: right !important;
-   width: 75% !important;
-   /* min-height: 42px; */
-   min-height: 72px !important;
-   height: 100% !important;
-  box-sizing: border-box !important; 
-   moz-box-sizing: border-box !important;
-webkit-box-sizing: border-box !important;
+    float: right !important;
+    width: 75% !important;
+    /* min-height: 42px; */
+    min-height: 72px !important;
+    height: 100% !important;
+    box-sizing: border-box !important; 
+    moz-box-sizing: border-box !important;
+    webkit-box-sizing: border-box !important;
 }
 
 .ecwd-widget-mini .ecwd-list-date {
@@ -485,6 +489,9 @@ webkit-box-sizing: border-box !important;
     -webkit-box-sizing: border-box;
 }
 
+.ecwd_calendar.ecwd-widget-mini {
+    max-width:500px !important;
+}
  .ecwd_calendar_view_dropdown  {
     font-family:arial, sans-serif;	 
  }
@@ -496,12 +503,30 @@ webkit-box-sizing: border-box !important;
  
 .calendar-head {
     font-family: 'raleway', 'helvetica', arial, sans-serif;	
+    background-color:#23060f !important;
+    height: 75px !important;
+    
 }
 .ecwd_list .ecwd-list-date {
     text-align: center;
     color: #fff;
     font-size: 2em;
     font-style: italic;
+}
+
+.ecwd-day-date, .day-event-list .ecwd-week-date, .day4-event-list .ecwd-week-date, .week-event-list .ecwd-week-date {
+    background-color: #7f8d3c !important;
+    width: 25% !important;
+    padding: 5px !important;
+}
+
+ecwd-widget-mini .ecwd_calendar_view_dropdown {
+    background-color: #7f8d3c !important;
+}
+
+ecwd-widget-mini .ecwd_calendar_view_dropdown > a {
+    color: #fff !important;
+    font-style:normal !important;
 }
 
 li.ecwd-no-image {
@@ -968,16 +993,22 @@ div.sci-contact p.sci-address-email{
 }
 #widgets section.widgets-item{
 	/*width: 298px;*/
-	max-width: 300px;
+	/*max-width: 300px;*/
+    width:32%;
 	float:left;
 	margin-bottom: 0px;
 	border:1px solid #000000;
 	text-align:center;
 	/*margin-right:20px;*/
-	margin-right:11px;
+	/*margin-right:11px;*/
+    margin-right:2%;
 	/*height: 350px;*/
 	background-color:#143020;
 	padding-top: 15px;
+}
+
+#widgets section.widgets-item:last-of-type {
+    margin-right: 0;
 }
 
 #widgets section.widgets-item p {
@@ -2071,10 +2102,10 @@ ul .sub-menu{
 
 	/*Desktop screen set to 980px or below*/
 @media all and (min-width: 1201px) {
-	#header {
-	    height: 135px;	
-	}
-    #mainLogo {
+#header {
+    height: 135px;	
+}
+#mainLogo {
     left: 1em;
     top: .75em;
 	width: 145px;
@@ -2089,7 +2120,7 @@ ul .sub-menu{
 }
 
 #widgets section.widgets-item{
-	width: 31.9%;
+	/*width: 31.9%;*/
 	margin-bottom: 0px;
 	
 }
@@ -2099,19 +2130,19 @@ div.news-widgets {
 }
  div#news div.news-widgets article.news-item {
 	/*width: 100%;*/
-	}
-	#util-footer{
-width:100%;
-	}
-	#util-footer{
-width:100%;
-	}
+}
+#util-footer{
+    width:100%;
+}
+#util-footer{
+    width:100%;
+}
 }
 
 @media screen and (min-width: 951px){
-    #navigation {
-	    max-height: 35px;	
-	}
+#navigation {
+    max-height: 35px;	
+}
 }
 @media screen and (max-width: 950px) {
     /* Styles */
@@ -2128,7 +2159,7 @@ body {
 }
 
 #widgets section.widgets-item{
-	width: 31.7%;
+	/*width: 31.7%;*/
 }
 
 #latest {
@@ -2302,8 +2333,8 @@ body {
 	
 
 #widgets section.widgets-item {
-    margin-right: 0.5%;
-    width: 32.6%;
+   /* margin-right: 0.5%;
+    width: 32.6%;*/
 }
 
 div#widgets section.widgets-item a.button {
