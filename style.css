@@ -490,7 +490,7 @@ article#single-item.single{
 }
 
 .ecwd_calendar.ecwd-widget-mini {
-    max-width:500px !important;
+    max-width:none !important;
 }
  .ecwd_calendar_view_dropdown  {
     font-family:arial, sans-serif;	 
@@ -2167,11 +2167,11 @@ body {
 }
 
 div.news-widgets {
-	width:64.1%;
+	/*width:64.1%;*/
 }
 
 div#news div.news-widgets article.news-item {
-	width: 48%;
+	/*width: 48%;*/
 }
 
 #calendar {
@@ -2267,7 +2267,7 @@ div.news-widgets {
 }
 
 div#news div.news-widgets article.news-item {
-	width: 48.4%;
+	width: 48.5%;
 	}
 		
 #calendar {
@@ -2611,9 +2611,9 @@ div.im-news img.attachment-post-thumbnail.wp-post-image {
     position: absolute;
     top: 0.25em;
 }
- div#news div.news-widgets article.news-item {
+div#news div.news-widgets article.news-item {
 	width: 100%;
-	}
+}
 div.news-widgets {
 	width:100%;
 }
@@ -2678,116 +2678,116 @@ div.im-news img.attachment-post-thumbnail.wp-post-image {
 /* Mobile Screen Set to 400px or Below */
 @media screen and (max-width: 400px) {
 	
-	body {
-		padding: 0;
-	}
-    
-    article.box-left {
-		width:90%;
-		float:none;		
-	}  
-    #menu-footer {
-	    display: none;
-    }
+body {
+    padding: 0;
+}
 
-    .box-long {
-	    width:90%;
-        float: none;
-	}
-    
-    #blog.sidebar {
-    display: none;    
+article.box-left {
+    width:90%;
+    float:none;		
+}  
+#menu-footer {
+    display: none;
+}
+
+.box-long {
+    width:90%;
+    float: none;
+}
+
+#blog.sidebar {
+display: none;    
+}
+
+#header {
+    height:165px;	
+}
+#mainLogo {
+    left: 0em;
+    max-width: 120px;
+    position: absolute;
+    right:0em;
+    margin:2.75em auto;
+}
+ div#news div.news-widgets article.news-item {
+    width: 100%;
     }
-	
-	#header {
-	    height:165px;	
-	}
-    #mainLogo {
-		left: 0em;
-		max-width: 120px;
-		position: absolute;
-		right:0em;
-		margin:2.75em auto;
-	}
-	 div#news div.news-widgets article.news-item {
-		width: 100%;
-		}
-	#utilities-header {
-		left: 1px;
-		position: absolute;
-		top: 0;
-	}
-	#social-header {
-		margin-left: 1px;
-		margin-top: 0px;
-	   
-	}
-	#search input#s {
-		float:left;
-		font-size: 12px;
-		height:20px;
-		margin-right: 10px;
-		margin-top: 2px;
-		width: 100px;
-		margin-left: 5px;
-	}
-	#search {
-	position: absolute;
-		right: 5px;
-		top: 5px;
-	}	
-	
-	div#news p.read-more-1 {
-	    display:none;	
-	}
-	
-	#searchsubmit {
-		border: none;
-	}
-	
-	
-	#social-header .fa-2x {
-		font-size: 2em;
-	   line-height:1.5em;
-	}
-	#utilities-footer {
-		display: none;
-	}
-	
-	.fa-2x {
-		padding-left:5px;
-	}
-	
-	#utilities-footer {
-		display: none;
-	}
-	#secondary {
-		float:right;
-		width:100%;
-		padding-top:15px;
-	}
-	.section-box {
-		width:100%;
-		height: 35px;
-		}
-	.section-boxes{
-		max-width: 100%;
-		height:auto;
-	}
-	.widgets-item .fa-5x{
-		font-size:4em;
-	}
-	#widgets section.widgets-item p{
-		height: auto;
-		margin-bottom:1em;
-	}
-	div.im-news img.attachment-post-thumbnail.wp-post-image {
-		width: 100%;
-		height:120px;
-	}
-	
-	#calendar {
-	    width:100%;	
-	}
-	
-	}
+#utilities-header {
+    left: 1px;
+    position: absolute;
+    top: 0;
+}
+#social-header {
+    margin-left: 1px;
+    margin-top: 0px;
+
+}
+#search input#s {
+    float:left;
+    font-size: 12px;
+    height:20px;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 100px;
+    margin-left: 5px;
+}
+#search {
+position: absolute;
+    right: 5px;
+    top: 5px;
+}	
+
+div#news p.read-more-1 {
+    display:none;	
+}
+
+#searchsubmit {
+    border: none;
+}
+
+
+#social-header .fa-2x {
+    font-size: 2em;
+   line-height:1.5em;
+}
+#utilities-footer {
+    display: none;
+}
+
+.fa-2x {
+    padding-left:5px;
+}
+
+#utilities-footer {
+    display: none;
+}
+#secondary {
+    float:right;
+    width:100%;
+    padding-top:15px;
+}
+.section-box {
+    width:100%;
+    height: 35px;
+    }
+.section-boxes{
+    max-width: 100%;
+    height:auto;
+}
+.widgets-item .fa-5x{
+    font-size:4em;
+}
+#widgets section.widgets-item p{
+    height: auto;
+    margin-bottom:1em;
+}
+div.im-news img.attachment-post-thumbnail.wp-post-image {
+    width: 100%;
+    height:120px;
+}
+
+#calendar {
+    width:100%;	
+}
+
+}
