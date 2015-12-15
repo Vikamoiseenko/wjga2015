@@ -1005,6 +1005,7 @@ div.sci-contact p.sci-address-email{
 	/*height: 350px;*/
 	background-color:#143020;
 	padding-top: 15px;
+    box-sizing:border-box;
 }
 
 #widgets section.widgets-item:last-of-type {
