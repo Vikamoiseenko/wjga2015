@@ -8,13 +8,13 @@
  <a href="https://mobile.twitter.com/wjga1976" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
  <a href="https://www.youtube.com/channel/UCOGe4Oqt2qZm8MSD1GBjeZw" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
  </div> <!-- end social icon -->
-<div id="wjga"><p>Washington Junior Association</p></div>
+<div id="wjga"><p>Washington Junior Golf Association</p></div>
 <!-- begin search form -->
 <div id="link">
 <ul>
-<li><a href="/contact">Contact | </a></li>
-<li><a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=MvPPp3OwNQNGVtc4EmWnO_RcBvb2Gqvzsk0MuuGQrz5MT-WERELuTMKdyYK&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2">Donate | </a></li>
-<li><a href="/disclaimer">Disclaimer</a></li>
+<li><a href="http://206.63.68.170/~wjgaadmin/?p=2290">Contact | </a></li>
+<li><a href="http://206.63.68.170/~wjgaadmin/get-involved/donate/">Donate | </a></li>
+<li><a href="http://206.63.68.170/~wjgaadmin/?p=968">Disclaimer</a></li>
 </ul>
 </div>
 </div> <!--end util-footer -->
