@@ -99,7 +99,7 @@ $title = $page_data->post_title;
 <div id="calendar">
 	<?php get_sidebar('tertiary'); ?>
 </div>
-<p class="read-more-1"><a href="/blog-2">More News &raquo;</a></p>
+<p class="read-more-1"><a href="http://206.63.68.170/~wjgaadmin/?page_id=459">More News &raquo;</a></p>
 </div>
 </div> <!-- end middle -->
 
