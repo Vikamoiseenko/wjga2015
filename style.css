@@ -181,6 +181,15 @@ h1 strong {
 
 /* LAYOUT */
 
+hr {
+    background-color: #ccc;
+    border: medium none;
+    color: #ccc;
+    height: 1px;
+    margin-bottom: 0.25em;
+    text-align: left;
+}
+
 #wrapper {
 	max-width:1200px;
 	margin:0 auto;
@@ -212,7 +221,7 @@ h1 strong {
     padding: 2px 5px;
 }
 
- div#main div#content.page h2{
+div#main div#content.page h2{
 	 background-color:#22050E;
      letter-spacing: 0.5px;
  }
@@ -555,6 +564,7 @@ article#single-item.single{
     background-color: #7f8d3c !important;
     width: 25% !important;
     padding: 5px !important;
+    box-sizing:border-box;
 }
 
 ecwd-widget-mini .ecwd_calendar_view_dropdown {
@@ -566,6 +576,25 @@ ecwd-widget-mini .ecwd_calendar_view_dropdown > a {
     font-style:normal !important;
 }
 
+.ecwd_calendar.ecwd-widget-mini div.event-details {
+    box-sizing:border-box;
+    width:100% !important;
+    padding:2px !important;
+    background-color: #fff !important;
+}
+
+#ecwd-events-content .ecwd-event-details {
+    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
+    box-sizing: border-box;
+    clear: left;
+    margin-top: 1em;
+    padding: 5px;
+}
+
+#ecwd_back_link {
+    margin:1em 0;   
+}
 li.ecwd-no-image {
    padding: 0 10px 10px !important;
    overflow: hidden !important;
