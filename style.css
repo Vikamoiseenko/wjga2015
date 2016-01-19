@@ -40,16 +40,16 @@ a {
 /* GLOBAL TEXT STYLES */
 
 html {
-	/*font-size: 16px; */
+	/*font-size: 16px; 
 	height: 100%; overflow: auto; margin: 0;
-	-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;*/
 }
 
 body{
 	font-size: 100%;
 	font-family:  'Helvetica', arial, sans-serif;
 	background-color:#f1f1f1;
-		height: 100%; overflow: auto; margin: 0;
+    height: 100%; overflow: auto; margin: 0;
 	-webkit-overflow-scrolling: touch;
 
 }
@@ -59,10 +59,10 @@ a:link,
 a:visited {
 	color: #7F8D3C !important;
     /*color: #448C35 !important;*/
-	}
- div.headline div.head-title a	{
+}
+div.headline div.head-title a	{
 	 color: #dbd9d6 !important;
- }
+}
 div#middle aside#primary h2 a.sidebar{
     color:#ffffff !important;
 }
@@ -73,7 +73,7 @@ a:hover,
 a:focus {
 	color: #647D62 !important;
 	/*border-bottom: 1px solid #ddd;*/
-	}
+}
 	
 /* END GLOBAL TEXT STYLES */
 
@@ -135,10 +135,12 @@ h3 {
 
 h4 {
 	font-size: 1.25em;
+    margin-bottom: 5px;
+    padding-top: 9px;
 }
 
 h5 {
-    font-size: 1.15em;
+    font-size: 1.1em;
     margin-bottom: 5px;
     padding-top: 9px;
 }
@@ -147,7 +149,6 @@ h5 {
     font-weight: bold;
     margin-top: 35px;
     padding-bottom: 2px;
-    text-align: center;
 }
 
 small, .font_small {
@@ -995,11 +996,11 @@ form.search {
 }
 
 .post-nav .alignleft {
-	color:blue;
+	color:#7f8d3c;
 }
 
 .post-nav .alignright {
-    color: red;	
+    color: #7f8d3c;	
 }
 
 .search-again {
@@ -1416,7 +1417,7 @@ div.center h4 {
 /* FORM STYLES */
 
 textarea, input, select {
-	margin-bottom:6px;
+	/*margin-bottom:6px;*/
 }
 
 div.mailing-list form {
@@ -1491,7 +1492,7 @@ input[type=submit] {
 
 /* END FORM STYLES */
 textarea, input, select {
-	margin-bottom:6px;
+	/*margin-bottom:6px;*/
 }
 
 /* LISTS */
@@ -2160,6 +2161,11 @@ ul .sub-menu{
 /* COMMENTS */	
 #comments-head {
 	border-bottom: 1px solid #ddd;
+    color: #444 !important;
+    display: inline-block;
+    padding-bottom: 4px;
+    text-align: center;
+    width: 100%;
 }
 
 #comments-box ol,
