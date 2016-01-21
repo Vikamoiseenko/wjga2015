@@ -226,10 +226,11 @@ hr {
 #content h2 {
     box-sizing: border-box;
     color: #fff !important;
-    height: 39px;
+    height: auto;
+    min-height: 39px;
     padding: 2px 5px;
+    width: 100%;
 }
-
 div#main div#content.page h2{
 	 background-color:#22050E;
      letter-spacing: 0.5px;
@@ -484,7 +485,8 @@ div#main div#content.index article#blogs-item.blogs{
 article#single-item.single{
 	/*max-width: 298px;*/
 	border:none;
-	margin: 0 6px 10px 0;
+	/*margin: 0 6px 10px 0;*/
+    margin:0;
 	background-color:#7f8d3c;
 	}
 
@@ -1258,24 +1260,28 @@ article.box-left {
     margin-right: 10px;
     max-height: 300px;
     overflow: hidden;
-    /*margin-right: 10px;*/
 }
+/*article.box-left:nth-child(odd) {
+    margin-left:10px;   
+}*/
  div.wrap{		
- 	width:95.6%;
+ 	/*width:95.6%;*/
+    /* width:90.5%;*/
+    width:100%;
 	display: inline-block;
 	text-align: center;
 	/*border-radius:20px;*/
 	border-radius:0;
 	/*box-shadow:3px 3px 10px #CCCCCC;*/
 	/*background-color:#FFFFFF;*/
-	padding-left:10px; /*older browsers*/
-	padding-left:0.625rem; /*10px /16px */
-	padding-right:10px; /*older browsers*/
-	padding-right:0.625rem; /*10px /16px */
-    padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 1em;
-    margin-top: 0px;
+	/*padding-left:10px; /*older browsers*/
+	/*padding-left:0.625rem; /*10px /16px */
+	/*padding-right:10px; /*older browsers*/
+	/*padding-right:0.625rem; /*10px /16px */
+    /*padding-top: 10px;
+	padding-bottom: 10px;*/
+	/*margin-bottom: 1em;*/
+    margin: 1em auto;
 	background-color:transparent;
     box-shadow: 0;
 	
@@ -2159,6 +2165,9 @@ ul .sub-menu{
     color: #ddd !important;	
 }
 /* COMMENTS */	
+#commentform input {
+     margin:0;   
+}
 #comments-head {
 	border-bottom: 1px solid #ddd;
     color: #444 !important;
