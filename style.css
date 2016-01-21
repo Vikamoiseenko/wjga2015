@@ -40,9 +40,9 @@ a {
 /* GLOBAL TEXT STYLES */
 
 html {
-	/*font-size: 16px; 
+	/*font-size: 16px; */
 	height: 100%; overflow: auto; margin: 0;
-	-webkit-overflow-scrolling: touch;*/
+	-webkit-overflow-scrolling: touch;
 }
 
 body{
